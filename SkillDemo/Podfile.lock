@@ -2,17 +2,21 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - ReactiveObjC (3.1.1)
 
 DEPENDENCIES:
   - FMDB
+  - ReactiveObjC (~> 3.1.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FMDB
+    - ReactiveObjC
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
 
-PODFILE CHECKSUM: 63cadfad7eded472a5079792e28272608ea27297
+PODFILE CHECKSUM: 3564488ee36941a5de14690c8864a5e459dcc68b
 
 COCOAPODS: 1.9.0

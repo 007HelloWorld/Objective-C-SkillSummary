@@ -13,6 +13,16 @@
 #import "SkillViewModel.h"
 #import "LocalStoreViewController.h"
 #import "SafetyViewController.h"
+#import "TimerViewController.h"
+#import "HybridViewController.h"
+#import "Multi-threadViewController.h"
+#import "LocalDeliveryViewController.h"
+#import "RunTimeViewController.h"
+#import "ArithmeticViewController.h"
+#import "DateViewController.h"
+#import "CrashViewController.h"
+#import "RACViewController.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 
 
 @interface ViewController ()<UITableViewDelegate>
@@ -34,6 +44,11 @@
     [self bindModel];
     //加载视图
     [self setupSubViews];
+    
+    //添加监听
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"NOTI" object:nil] subscribeNext:^(NSNotification * _Nullable x) {
+        NSLog(@"通知的接受     %@",x.userInfo);
+    }];
 
 }
 
@@ -72,27 +87,42 @@
         LocalStoreViewController * local = [LocalStoreViewController new];
         [self.navigationController pushViewController:local animated:YES];
     }else if (indexPath.row == 1){
-        
+        HybridViewController * hybrid = [HybridViewController new];
+        [self.navigationController pushViewController:hybrid animated:YES];
     }else if (indexPath.row == 2){
-        
+        Multi_threadViewController * thread = [Multi_threadViewController new];
+        [self.navigationController pushViewController:thread animated:YES];
     }else if (indexPath.row == 3){
         
     }else if (indexPath.row == 4){
-        
+        LocalDeliveryViewController * local = [LocalDeliveryViewController new];
+        [self.navigationController pushViewController:local animated:YES];
     }else if (indexPath.row == 5){
-        
+        TimerViewController * timer = [TimerViewController new];
+        [self.navigationController pushViewController:timer animated:YES];
     }else if (indexPath.row == 6){
-        
+        RunTimeViewController * timer = [RunTimeViewController new];
+        [self.navigationController pushViewController:timer animated:YES];
     }else if (indexPath.row == 7){
-        
+        ArithmeticViewController * arithmetic = [ArithmeticViewController new];
+        [self.navigationController pushViewController:arithmetic animated:YES];
     }else if (indexPath.row == 8){
         
     }else if (indexPath.row == 9){
-        
+        RACViewController * rac = [RACViewController new];
+        [self.navigationController pushViewController:rac animated:YES];
     }else if (indexPath.row == 10){
         SafetyViewController * safety = [SafetyViewController new];
         [self.navigationController pushViewController:safety animated:YES];
+    }else if (indexPath.row == 11){
+        DateViewController * date = [DateViewController new];
+        [self.navigationController pushViewController:date animated:YES];
+    }else if (indexPath.row == 12){
+        CrashViewController * crash = [CrashViewController new];
+        [self.navigationController pushViewController:crash animated:YES];
     }
+    
+    
 
 }
 

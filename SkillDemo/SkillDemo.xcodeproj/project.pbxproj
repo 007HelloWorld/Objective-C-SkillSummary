@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		764317042504673D0034EE82 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764317032504673D0034EE82 /* UIWebViewController.m */; };
+		76431706250478DC0034EE82 /* indexDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 76431705250478DB0034EE82 /* indexDemo.html */; };
 		7647BB6F24FC860900586F4A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7647BB6D24FC860900586F4A /* Model.xcdatamodeld */; };
 		7647BB7824FC878100586F4A /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7647BB7724FC878100586F4A /* CoreDataViewController.m */; };
+		764E27E6251EF14600E12BD6 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E27E5251EF14600E12BD6 /* DateViewController.m */; };
+		764E27EC251F356000E12BD6 /* CrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E27EB251F356000E12BD6 /* CrashViewController.m */; };
+		764E27F0251F359900E12BD6 /* NSArray+PJW.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E27EF251F359900E12BD6 /* NSArray+PJW.m */; };
+		764E2806251F568D00E12BD6 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E2805251F568D00E12BD6 /* RACViewController.m */; };
+		764E280A251F58FA00E12BD6 /* BtnClickV.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E2809251F58FA00E12BD6 /* BtnClickV.m */; };
+		767516D22503A62D00E2D54D /* HybridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 767516D12503A62D00E2D54D /* HybridViewController.m */; };
+		767516D42503A78000E2D54D /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 767516D32503A78000E2D54D /* index.html */; };
 		7680181924FB81DB00A58DF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680181824FB81DB00A58DF0 /* AppDelegate.m */; };
 		7680181F24FB81DB00A58DF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680181E24FB81DB00A58DF0 /* ViewController.m */; };
 		7680182224FB81DB00A58DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7680182024FB81DB00A58DF0 /* Main.storyboard */; };
@@ -24,6 +33,13 @@
 		7680184E24FBA8CD00A58DF0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680184D24FBA8CD00A58DF0 /* Person.m */; };
 		76884DD924FCFC5700C5FDAA /* Students+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76884DD724FCFC5700C5FDAA /* Students+CoreDataClass.m */; };
 		76884DDA24FCFC5700C5FDAA /* Students+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 76884DD824FCFC5700C5FDAA /* Students+CoreDataProperties.m */; };
+		76B23C1F25013A8700546C76 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B23C1E25013A8700546C76 /* TimerViewController.m */; };
+		76B23C2225013AA700546C76 /* TGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B23C2025013AA600546C76 /* TGCDTimer.m */; };
+		76D5D6F92504C982001B89CE /* Multi-threadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D5D6F82504C982001B89CE /* Multi-threadViewController.m */; };
+		76D5D7002504CD51001B89CE /* LocalDeliveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D5D6FF2504CD51001B89CE /* LocalDeliveryViewController.m */; };
+		76D5D7042504D38A001B89CE /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D5D7032504D38A001B89CE /* RunTimeViewController.m */; };
+		76D5D7072504D4DB001B89CE /* NSArray+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D5D7062504D4DB001B89CE /* NSArray+Demo.m */; };
+		76D5D70B2504D9FE001B89CE /* ArithmeticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D5D70A2504D9FE001B89CE /* ArithmeticViewController.m */; };
 		76F37E982500716900353D1F /* SafetyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F37E972500716900353D1F /* SafetyViewController.m */; };
 		76F37E9B2500767B00353D1F /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F37E9A2500767A00353D1F /* RSA.m */; };
 		D112CA479AE86A6CD135AC0D /* Pods_SkillDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8582DBE9232DD3CABDE39292 /* Pods_SkillDemo.framework */; };
@@ -32,9 +48,25 @@
 /* Begin PBXFileReference section */
 		3B629D3C2B62D528E95C078D /* Pods-SkillDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillDemo.debug.xcconfig"; path = "Target Support Files/Pods-SkillDemo/Pods-SkillDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		51810F0E170BA4CC4C2CD941 /* Pods-SkillDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillDemo.release.xcconfig"; path = "Target Support Files/Pods-SkillDemo/Pods-SkillDemo.release.xcconfig"; sourceTree = "<group>"; };
+		764317022504673D0034EE82 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		764317032504673D0034EE82 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		76431705250478DB0034EE82 /* indexDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = indexDemo.html; sourceTree = "<group>"; };
 		7647BB6E24FC860900586F4A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7647BB7624FC878100586F4A /* CoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
 		7647BB7724FC878100586F4A /* CoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
+		764E27E4251EF14600E12BD6 /* DateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		764E27E5251EF14600E12BD6 /* DateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		764E27EA251F356000E12BD6 /* CrashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashViewController.h; sourceTree = "<group>"; };
+		764E27EB251F356000E12BD6 /* CrashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashViewController.m; sourceTree = "<group>"; };
+		764E27EE251F359900E12BD6 /* NSArray+PJW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+PJW.h"; sourceTree = "<group>"; };
+		764E27EF251F359900E12BD6 /* NSArray+PJW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PJW.m"; sourceTree = "<group>"; };
+		764E2804251F568D00E12BD6 /* RACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
+		764E2805251F568D00E12BD6 /* RACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		764E2808251F58FA00E12BD6 /* BtnClickV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BtnClickV.h; sourceTree = "<group>"; };
+		764E2809251F58FA00E12BD6 /* BtnClickV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BtnClickV.m; sourceTree = "<group>"; };
+		767516D02503A62D00E2D54D /* HybridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybridViewController.h; sourceTree = "<group>"; };
+		767516D12503A62D00E2D54D /* HybridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridViewController.m; sourceTree = "<group>"; };
+		767516D32503A78000E2D54D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		7680181424FB81DB00A58DF0 /* SkillDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7680181724FB81DB00A58DF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7680181824FB81DB00A58DF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +95,20 @@
 		76884DD624FCFC5700C5FDAA /* Students+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Students+CoreDataClass.h"; sourceTree = "<group>"; };
 		76884DD724FCFC5700C5FDAA /* Students+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Students+CoreDataClass.m"; sourceTree = "<group>"; };
 		76884DD824FCFC5700C5FDAA /* Students+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Students+CoreDataProperties.m"; sourceTree = "<group>"; };
+		76B23C1D25013A8700546C76 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		76B23C1E25013A8700546C76 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		76B23C2025013AA600546C76 /* TGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCDTimer.m; sourceTree = "<group>"; };
+		76B23C2125013AA700546C76 /* TGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCDTimer.h; sourceTree = "<group>"; };
+		76D5D6F72504C982001B89CE /* Multi-threadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Multi-threadViewController.h"; sourceTree = "<group>"; };
+		76D5D6F82504C982001B89CE /* Multi-threadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Multi-threadViewController.m"; sourceTree = "<group>"; };
+		76D5D6FE2504CD51001B89CE /* LocalDeliveryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDeliveryViewController.h; sourceTree = "<group>"; };
+		76D5D6FF2504CD51001B89CE /* LocalDeliveryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDeliveryViewController.m; sourceTree = "<group>"; };
+		76D5D7022504D38A001B89CE /* RunTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
+		76D5D7032504D38A001B89CE /* RunTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
+		76D5D7052504D4DB001B89CE /* NSArray+Demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Demo.h"; sourceTree = "<group>"; };
+		76D5D7062504D4DB001B89CE /* NSArray+Demo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Demo.m"; sourceTree = "<group>"; };
+		76D5D7092504D9FE001B89CE /* ArithmeticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArithmeticViewController.h; sourceTree = "<group>"; };
+		76D5D70A2504D9FE001B89CE /* ArithmeticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArithmeticViewController.m; sourceTree = "<group>"; };
 		76F37E962500716900353D1F /* SafetyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafetyViewController.h; sourceTree = "<group>"; };
 		76F37E972500716900353D1F /* SafetyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafetyViewController.m; sourceTree = "<group>"; };
 		76F37E992500767A00353D1F /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
@@ -98,6 +144,37 @@
 				7647BB7724FC878100586F4A /* CoreDataViewController.m */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		764E27E3251EF13100E12BD6 /* 日期 */ = {
+			isa = PBXGroup;
+			children = (
+				764E27E4251EF14600E12BD6 /* DateViewController.h */,
+				764E27E5251EF14600E12BD6 /* DateViewController.m */,
+			);
+			path = "日期";
+			sourceTree = "<group>";
+		};
+		764E27E9251F354100E12BD6 /* 崩溃问题 */ = {
+			isa = PBXGroup;
+			children = (
+				764E27EA251F356000E12BD6 /* CrashViewController.h */,
+				764E27EB251F356000E12BD6 /* CrashViewController.m */,
+				764E27EE251F359900E12BD6 /* NSArray+PJW.h */,
+				764E27EF251F359900E12BD6 /* NSArray+PJW.m */,
+			);
+			path = "崩溃问题";
+			sourceTree = "<group>";
+		};
+		764E2803251F567900E12BD6 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				764E2804251F568D00E12BD6 /* RACViewController.h */,
+				764E2805251F568D00E12BD6 /* RACViewController.m */,
+				764E2808251F58FA00E12BD6 /* BtnClickV.h */,
+				764E2809251F58FA00E12BD6 /* BtnClickV.m */,
+			);
+			path = RAC;
 			sourceTree = "<group>";
 		};
 		7680180B24FB81DB00A58DF0 = {
@@ -182,11 +259,17 @@
 		7680184024FB97B700A58DF0 /* DetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				764E2803251F567900E12BD6 /* RAC */,
+				764E27E9251F354100E12BD6 /* 崩溃问题 */,
+				764E27E3251EF13100E12BD6 /* 日期 */,
+				76D5D7082504D9D7001B89CE /* 算法 */,
+				76D5D7012504D376001B89CE /* RunTime */,
+				76D5D6FD2504CD3E001B89CE /* 本地推送 */,
 				7680184324FB97F600A58DF0 /* 本地存储 */,
 				7680184124FB97F600A58DF0 /* 多线程 */,
 				7680184224FB97F600A58DF0 /* 原生与js交互 */,
-				7680184424FB97F600A58DF0 /* block */,
 				76F37E952500714C00353D1F /* 加解密 */,
+				76B23C1C25013A6600546C76 /* 定时器 */,
 			);
 			path = DetailsViewController;
 			sourceTree = "<group>";
@@ -194,6 +277,8 @@
 		7680184124FB97F600A58DF0 /* 多线程 */ = {
 			isa = PBXGroup;
 			children = (
+				76D5D6F72504C982001B89CE /* Multi-threadViewController.h */,
+				76D5D6F82504C982001B89CE /* Multi-threadViewController.m */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -201,6 +286,12 @@
 		7680184224FB97F600A58DF0 /* 原生与js交互 */ = {
 			isa = PBXGroup;
 			children = (
+				76431705250478DB0034EE82 /* indexDemo.html */,
+				767516D32503A78000E2D54D /* index.html */,
+				767516D02503A62D00E2D54D /* HybridViewController.h */,
+				767516D12503A62D00E2D54D /* HybridViewController.m */,
+				764317022504673D0034EE82 /* UIWebViewController.h */,
+				764317032504673D0034EE82 /* UIWebViewController.m */,
 			);
 			path = "原生与js交互";
 			sourceTree = "<group>";
@@ -216,13 +307,6 @@
 			path = "本地存储";
 			sourceTree = "<group>";
 		};
-		7680184424FB97F600A58DF0 /* block */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = block;
-			sourceTree = "<group>";
-		};
 		7680184824FBA01800A58DF0 /* 归档 */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +316,46 @@
 				7680184D24FBA8CD00A58DF0 /* Person.m */,
 			);
 			path = "归档";
+			sourceTree = "<group>";
+		};
+		76B23C1C25013A6600546C76 /* 定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				76B23C2125013AA700546C76 /* TGCDTimer.h */,
+				76B23C2025013AA600546C76 /* TGCDTimer.m */,
+				76B23C1D25013A8700546C76 /* TimerViewController.h */,
+				76B23C1E25013A8700546C76 /* TimerViewController.m */,
+			);
+			path = "定时器";
+			sourceTree = "<group>";
+		};
+		76D5D6FD2504CD3E001B89CE /* 本地推送 */ = {
+			isa = PBXGroup;
+			children = (
+				76D5D6FE2504CD51001B89CE /* LocalDeliveryViewController.h */,
+				76D5D6FF2504CD51001B89CE /* LocalDeliveryViewController.m */,
+			);
+			path = "本地推送";
+			sourceTree = "<group>";
+		};
+		76D5D7012504D376001B89CE /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				76D5D7022504D38A001B89CE /* RunTimeViewController.h */,
+				76D5D7032504D38A001B89CE /* RunTimeViewController.m */,
+				76D5D7052504D4DB001B89CE /* NSArray+Demo.h */,
+				76D5D7062504D4DB001B89CE /* NSArray+Demo.m */,
+			);
+			path = RunTime;
+			sourceTree = "<group>";
+		};
+		76D5D7082504D9D7001B89CE /* 算法 */ = {
+			isa = PBXGroup;
+			children = (
+				76D5D7092504D9FE001B89CE /* ArithmeticViewController.h */,
+				76D5D70A2504D9FE001B89CE /* ArithmeticViewController.m */,
+			);
+			path = "算法";
 			sourceTree = "<group>";
 		};
 		76F37E952500714C00353D1F /* 加解密 */ = {
@@ -314,6 +438,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7680182724FB81DE00A58DF0 /* LaunchScreen.storyboard in Resources */,
+				767516D42503A78000E2D54D /* index.html in Resources */,
+				76431706250478DC0034EE82 /* indexDemo.html in Resources */,
 				7680182424FB81DE00A58DF0 /* Assets.xcassets in Resources */,
 				7680182224FB81DB00A58DF0 /* Main.storyboard in Resources */,
 			);
@@ -368,11 +494,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764E27F0251F359900E12BD6 /* NSArray+PJW.m in Sources */,
+				764E2806251F568D00E12BD6 /* RACViewController.m in Sources */,
 				7680181F24FB81DB00A58DF0 /* ViewController.m in Sources */,
+				76D5D7002504CD51001B89CE /* LocalDeliveryViewController.m in Sources */,
+				764E27EC251F356000E12BD6 /* CrashViewController.m in Sources */,
 				7680183C24FB879F00A58DF0 /* SkillTableDataSource.m in Sources */,
 				7680184E24FBA8CD00A58DF0 /* Person.m in Sources */,
+				764317042504673D0034EE82 /* UIWebViewController.m in Sources */,
+				76D5D7042504D38A001B89CE /* RunTimeViewController.m in Sources */,
+				764E27E6251EF14600E12BD6 /* DateViewController.m in Sources */,
+				76D5D7072504D4DB001B89CE /* NSArray+Demo.m in Sources */,
 				76884DDA24FCFC5700C5FDAA /* Students+CoreDataProperties.m in Sources */,
+				764E280A251F58FA00E12BD6 /* BtnClickV.m in Sources */,
+				76B23C1F25013A8700546C76 /* TimerViewController.m in Sources */,
 				7680181924FB81DB00A58DF0 /* AppDelegate.m in Sources */,
+				76D5D70B2504D9FE001B89CE /* ArithmeticViewController.m in Sources */,
 				7680183924FB84C200A58DF0 /* SkillTableViewCell.m in Sources */,
 				76F37E9B2500767B00353D1F /* RSA.m in Sources */,
 				7680184724FB988600A58DF0 /* LocalStoreViewController.m in Sources */,
@@ -380,9 +517,12 @@
 				7680182A24FB81DE00A58DF0 /* main.m in Sources */,
 				76F37E982500716900353D1F /* SafetyViewController.m in Sources */,
 				7680184B24FBA04800A58DF0 /* ArchiveViewController.m in Sources */,
+				76D5D6F92504C982001B89CE /* Multi-threadViewController.m in Sources */,
+				76B23C2225013AA700546C76 /* TGCDTimer.m in Sources */,
 				76884DD924FCFC5700C5FDAA /* Students+CoreDataClass.m in Sources */,
 				7647BB6F24FC860900586F4A /* Model.xcdatamodeld in Sources */,
 				7680183624FB847600A58DF0 /* SkillModel.m in Sources */,
+				767516D22503A62D00E2D54D /* HybridViewController.m in Sources */,
 				7647BB7824FC878100586F4A /* CoreDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

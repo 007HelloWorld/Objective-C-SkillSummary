@@ -10,5 +10,6 @@ target 'SkillDemo' do
   # Pods for SkillDemo
 
     pod 'FMDB'
+    pod 'ReactiveObjC', '~> 3.1.1'
 
 end

@@ -35,6 +35,7 @@
      
     */
     
+    self.view.backgroundColor = [UIColor whiteColor];
 
     //公钥
        NSString *publicKey = @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDdWOCSKTZT0+KyGPQJ2l+oTbxdOQw+TGQwn1iobaq34mNgcRdX3g50YxlRtBz4QQkqWYVk7IXgwPTMxW6ZOFjYMRsKSX7d7yEjshMbhwm2wgISO6pN0/THoZilWD36uF4goy7VqQ2iyFVkbALfqYdF77MmHPh+ET1dXOrpMz+5pQIDAQAB";
