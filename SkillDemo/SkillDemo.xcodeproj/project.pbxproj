@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7633E8AD252C488D0037A08A /* ResidentThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E8AC252C488D0037A08A /* ResidentThread.m */; };
+		7633E8B3252C4B690037A08A /* TripartiteLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E8B2252C4B690037A08A /* TripartiteLoginVC.m */; };
+		7633E8BA252C556B0037A08A /* SignInApple.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E8B9252C556B0037A08A /* SignInApple.m */; };
+		7633E8BE252C56160037A08A /* YostarKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E8BD252C56160037A08A /* YostarKeychain.m */; };
+		7633E905252CA7D80037A08A /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E904252CA7D80037A08A /* PayViewController.m */; };
 		764317042504673D0034EE82 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764317032504673D0034EE82 /* UIWebViewController.m */; };
 		76431706250478DC0034EE82 /* indexDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 76431705250478DB0034EE82 /* indexDemo.html */; };
 		7647BB6F24FC860900586F4A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7647BB6D24FC860900586F4A /* Model.xcdatamodeld */; };
@@ -16,6 +21,12 @@
 		764E27F0251F359900E12BD6 /* NSArray+PJW.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E27EF251F359900E12BD6 /* NSArray+PJW.m */; };
 		764E2806251F568D00E12BD6 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E2805251F568D00E12BD6 /* RACViewController.m */; };
 		764E280A251F58FA00E12BD6 /* BtnClickV.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E2809251F58FA00E12BD6 /* BtnClickV.m */; };
+		7666E5382529BB7B009F8DEB /* UseXIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7666E5362529BB7B009F8DEB /* UseXIBViewController.m */; };
+		7666E5442529BCE7009F8DEB /* XIBDemoViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7666E5422529BCE7009F8DEB /* XIBDemoViewTableViewCell.m */; };
+		7666E5452529BCE7009F8DEB /* XIBDemoViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7666E5432529BCE7009F8DEB /* XIBDemoViewTableViewCell.xib */; };
+		7666E54D2529CC83009F8DEB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7666E54C2529CC83009F8DEB /* OpenGLES.framework */; };
+		7666E54F2529CCA1009F8DEB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7666E54E2529CCA1009F8DEB /* GLKit.framework */; };
+		7666E5622529CCD3009F8DEB /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7666E5612529CCD3009F8DEB /* libGLTools.a */; };
 		767516D22503A62D00E2D54D /* HybridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 767516D12503A62D00E2D54D /* HybridViewController.m */; };
 		767516D42503A78000E2D54D /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 767516D32503A78000E2D54D /* index.html */; };
 		7680181924FB81DB00A58DF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680181824FB81DB00A58DF0 /* AppDelegate.m */; };
@@ -33,6 +44,7 @@
 		7680184E24FBA8CD00A58DF0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680184D24FBA8CD00A58DF0 /* Person.m */; };
 		76884DD924FCFC5700C5FDAA /* Students+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76884DD724FCFC5700C5FDAA /* Students+CoreDataClass.m */; };
 		76884DDA24FCFC5700C5FDAA /* Students+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 76884DD824FCFC5700C5FDAA /* Students+CoreDataProperties.m */; };
+		769EDB27252624EB001C0B80 /* UpgradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769EDB26252624EB001C0B80 /* UpgradeViewController.m */; };
 		76B23C1F25013A8700546C76 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B23C1E25013A8700546C76 /* TimerViewController.m */; };
 		76B23C2225013AA700546C76 /* TGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B23C2025013AA600546C76 /* TGCDTimer.m */; };
 		76D5D6F92504C982001B89CE /* Multi-threadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D5D6F82504C982001B89CE /* Multi-threadViewController.m */; };
@@ -48,6 +60,17 @@
 /* Begin PBXFileReference section */
 		3B629D3C2B62D528E95C078D /* Pods-SkillDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillDemo.debug.xcconfig"; path = "Target Support Files/Pods-SkillDemo/Pods-SkillDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		51810F0E170BA4CC4C2CD941 /* Pods-SkillDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillDemo.release.xcconfig"; path = "Target Support Files/Pods-SkillDemo/Pods-SkillDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7633E8AB252C488D0037A08A /* ResidentThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResidentThread.h; sourceTree = "<group>"; };
+		7633E8AC252C488D0037A08A /* ResidentThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResidentThread.m; sourceTree = "<group>"; };
+		7633E8B1252C4B690037A08A /* TripartiteLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripartiteLoginVC.h; sourceTree = "<group>"; };
+		7633E8B2252C4B690037A08A /* TripartiteLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripartiteLoginVC.m; sourceTree = "<group>"; };
+		7633E8B8252C556B0037A08A /* SignInApple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInApple.h; sourceTree = "<group>"; };
+		7633E8B9252C556B0037A08A /* SignInApple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInApple.m; sourceTree = "<group>"; };
+		7633E8BC252C56160037A08A /* YostarKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YostarKeychain.h; sourceTree = "<group>"; };
+		7633E8BD252C56160037A08A /* YostarKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YostarKeychain.m; sourceTree = "<group>"; };
+		7633E8C3252C57DC0037A08A /* SkillDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SkillDemo.entitlements; sourceTree = "<group>"; };
+		7633E903252CA7D80037A08A /* PayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		7633E904252CA7D80037A08A /* PayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
 		764317022504673D0034EE82 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
 		764317032504673D0034EE82 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
 		76431705250478DB0034EE82 /* indexDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = indexDemo.html; sourceTree = "<group>"; };
@@ -64,6 +87,28 @@
 		764E2805251F568D00E12BD6 /* RACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		764E2808251F58FA00E12BD6 /* BtnClickV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BtnClickV.h; sourceTree = "<group>"; };
 		764E2809251F58FA00E12BD6 /* BtnClickV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BtnClickV.m; sourceTree = "<group>"; };
+		7666E5352529BB7B009F8DEB /* UseXIBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseXIBViewController.h; sourceTree = "<group>"; };
+		7666E5362529BB7B009F8DEB /* UseXIBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseXIBViewController.m; sourceTree = "<group>"; };
+		7666E5412529BCE7009F8DEB /* XIBDemoViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XIBDemoViewTableViewCell.h; sourceTree = "<group>"; };
+		7666E5422529BCE7009F8DEB /* XIBDemoViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XIBDemoViewTableViewCell.m; sourceTree = "<group>"; };
+		7666E5432529BCE7009F8DEB /* XIBDemoViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBDemoViewTableViewCell.xib; sourceTree = "<group>"; };
+		7666E54C2529CC83009F8DEB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7666E54E2529CCA1009F8DEB /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7666E5522529CCD3009F8DEB /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		7666E5532529CCD3009F8DEB /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		7666E5542529CCD3009F8DEB /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		7666E5552529CCD3009F8DEB /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		7666E5562529CCD3009F8DEB /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		7666E5572529CCD3009F8DEB /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		7666E5582529CCD3009F8DEB /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		7666E5592529CCD3009F8DEB /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		7666E55A2529CCD3009F8DEB /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		7666E55B2529CCD3009F8DEB /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		7666E55D2529CCD3009F8DEB /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		7666E55E2529CCD3009F8DEB /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		7666E55F2529CCD3009F8DEB /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		7666E5602529CCD3009F8DEB /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		7666E5612529CCD3009F8DEB /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
 		767516D02503A62D00E2D54D /* HybridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybridViewController.h; sourceTree = "<group>"; };
 		767516D12503A62D00E2D54D /* HybridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridViewController.m; sourceTree = "<group>"; };
 		767516D32503A78000E2D54D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -95,6 +140,8 @@
 		76884DD624FCFC5700C5FDAA /* Students+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Students+CoreDataClass.h"; sourceTree = "<group>"; };
 		76884DD724FCFC5700C5FDAA /* Students+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Students+CoreDataClass.m"; sourceTree = "<group>"; };
 		76884DD824FCFC5700C5FDAA /* Students+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Students+CoreDataProperties.m"; sourceTree = "<group>"; };
+		769EDB25252624EB001C0B80 /* UpgradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpgradeViewController.h; sourceTree = "<group>"; };
+		769EDB26252624EB001C0B80 /* UpgradeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpgradeViewController.m; sourceTree = "<group>"; };
 		76B23C1D25013A8700546C76 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		76B23C1E25013A8700546C76 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		76B23C2025013AA600546C76 /* TGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCDTimer.m; sourceTree = "<group>"; };
@@ -121,6 +168,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7666E54F2529CCA1009F8DEB /* GLKit.framework in Frameworks */,
+				7666E54D2529CC83009F8DEB /* OpenGLES.framework in Frameworks */,
+				7666E5622529CCD3009F8DEB /* libGLTools.a in Frameworks */,
 				D112CA479AE86A6CD135AC0D /* Pods_SkillDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,9 +181,41 @@
 		6BEDA6FAADC313AF13A84F25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7666E54E2529CCA1009F8DEB /* GLKit.framework */,
+				7666E54C2529CC83009F8DEB /* OpenGLES.framework */,
 				8582DBE9232DD3CABDE39292 /* Pods_SkillDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7633E8B0252C4B3F0037A08A /* 三方登录 */ = {
+			isa = PBXGroup;
+			children = (
+				7633E8B1252C4B690037A08A /* TripartiteLoginVC.h */,
+				7633E8B2252C4B690037A08A /* TripartiteLoginVC.m */,
+				7633E8B7252C55600037A08A /* Apple */,
+			);
+			path = "三方登录";
+			sourceTree = "<group>";
+		};
+		7633E8B7252C55600037A08A /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				7633E8B8252C556B0037A08A /* SignInApple.h */,
+				7633E8B9252C556B0037A08A /* SignInApple.m */,
+				7633E8BC252C56160037A08A /* YostarKeychain.h */,
+				7633E8BD252C56160037A08A /* YostarKeychain.m */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
+		7633E902252CA7A80037A08A /* 支付 */ = {
+			isa = PBXGroup;
+			children = (
+				7633E903252CA7D80037A08A /* PayViewController.h */,
+				7633E904252CA7D80037A08A /* PayViewController.m */,
+			);
+			path = "支付";
 			sourceTree = "<group>";
 		};
 		7647BB6C24FC832600586F4A /* CoreData */ = {
@@ -177,6 +259,64 @@
 			path = RAC;
 			sourceTree = "<group>";
 		};
+		7666E5342529BB63009F8DEB /* UseXIB */ = {
+			isa = PBXGroup;
+			children = (
+				7666E5352529BB7B009F8DEB /* UseXIBViewController.h */,
+				7666E5362529BB7B009F8DEB /* UseXIBViewController.m */,
+				7666E5412529BCE7009F8DEB /* XIBDemoViewTableViewCell.h */,
+				7666E5422529BCE7009F8DEB /* XIBDemoViewTableViewCell.m */,
+				7666E5432529BCE7009F8DEB /* XIBDemoViewTableViewCell.xib */,
+			);
+			path = UseXIB;
+			sourceTree = "<group>";
+		};
+		7666E5472529C7C5009F8DEB /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				7666E5502529CCD3009F8DEB /* OpenGlShare */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		7666E5502529CCD3009F8DEB /* OpenGlShare */ = {
+			isa = PBXGroup;
+			children = (
+				7666E5512529CCD3009F8DEB /* include */,
+				7666E5612529CCD3009F8DEB /* libGLTools.a */,
+			);
+			path = OpenGlShare;
+			sourceTree = "<group>";
+		};
+		7666E5512529CCD3009F8DEB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7666E5522529CCD3009F8DEB /* GLBatchBase.h */,
+				7666E5532529CCD3009F8DEB /* math3d.h */,
+				7666E5542529CCD3009F8DEB /* GLTriangleBatch.h */,
+				7666E5552529CCD3009F8DEB /* GLBatch.h */,
+				7666E5562529CCD3009F8DEB /* GLMatrixStack.h */,
+				7666E5572529CCD3009F8DEB /* GLFrame.h */,
+				7666E5582529CCD3009F8DEB /* GLFrustum.h */,
+				7666E5592529CCD3009F8DEB /* GLGeometryTransform.h */,
+				7666E55A2529CCD3009F8DEB /* GLShaderManager.h */,
+				7666E55B2529CCD3009F8DEB /* StopWatch.h */,
+				7666E55C2529CCD3009F8DEB /* GL */,
+				7666E5602529CCD3009F8DEB /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		7666E55C2529CCD3009F8DEB /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				7666E55D2529CCD3009F8DEB /* glxew.h */,
+				7666E55E2529CCD3009F8DEB /* wglew.h */,
+				7666E55F2529CCD3009F8DEB /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
 		7680180B24FB81DB00A58DF0 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +342,7 @@
 		7680181624FB81DB00A58DF0 /* SkillDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7633E8C3252C57DC0037A08A /* SkillDemo.entitlements */,
 				7680181724FB81DB00A58DF0 /* AppDelegate.h */,
 				7680181824FB81DB00A58DF0 /* AppDelegate.m */,
 				7680181D24FB81DB00A58DF0 /* ViewController.h */,
@@ -259,6 +400,11 @@
 		7680184024FB97B700A58DF0 /* DetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7633E902252CA7A80037A08A /* 支付 */,
+				7633E8B0252C4B3F0037A08A /* 三方登录 */,
+				7666E5472529C7C5009F8DEB /* OpenGL */,
+				7666E5342529BB63009F8DEB /* UseXIB */,
+				769EDB24252624C4001C0B80 /* 版本升级提示 */,
 				764E2803251F567900E12BD6 /* RAC */,
 				764E27E9251F354100E12BD6 /* 崩溃问题 */,
 				764E27E3251EF13100E12BD6 /* 日期 */,
@@ -279,6 +425,8 @@
 			children = (
 				76D5D6F72504C982001B89CE /* Multi-threadViewController.h */,
 				76D5D6F82504C982001B89CE /* Multi-threadViewController.m */,
+				7633E8AB252C488D0037A08A /* ResidentThread.h */,
+				7633E8AC252C488D0037A08A /* ResidentThread.m */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -316,6 +464,15 @@
 				7680184D24FBA8CD00A58DF0 /* Person.m */,
 			);
 			path = "归档";
+			sourceTree = "<group>";
+		};
+		769EDB24252624C4001C0B80 /* 版本升级提示 */ = {
+			isa = PBXGroup;
+			children = (
+				769EDB25252624EB001C0B80 /* UpgradeViewController.h */,
+				769EDB26252624EB001C0B80 /* UpgradeViewController.m */,
+			);
+			path = "版本升级提示";
 			sourceTree = "<group>";
 		};
 		76B23C1C25013A6600546C76 /* 定时器 */ = {
@@ -438,6 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7680182724FB81DE00A58DF0 /* LaunchScreen.storyboard in Resources */,
+				7666E5452529BCE7009F8DEB /* XIBDemoViewTableViewCell.xib in Resources */,
 				767516D42503A78000E2D54D /* index.html in Resources */,
 				76431706250478DC0034EE82 /* indexDemo.html in Resources */,
 				7680182424FB81DE00A58DF0 /* Assets.xcassets in Resources */,
@@ -494,6 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7666E5382529BB7B009F8DEB /* UseXIBViewController.m in Sources */,
 				764E27F0251F359900E12BD6 /* NSArray+PJW.m in Sources */,
 				764E2806251F568D00E12BD6 /* RACViewController.m in Sources */,
 				7680181F24FB81DB00A58DF0 /* ViewController.m in Sources */,
@@ -507,22 +666,29 @@
 				76D5D7072504D4DB001B89CE /* NSArray+Demo.m in Sources */,
 				76884DDA24FCFC5700C5FDAA /* Students+CoreDataProperties.m in Sources */,
 				764E280A251F58FA00E12BD6 /* BtnClickV.m in Sources */,
+				7633E8BA252C556B0037A08A /* SignInApple.m in Sources */,
 				76B23C1F25013A8700546C76 /* TimerViewController.m in Sources */,
+				7633E8BE252C56160037A08A /* YostarKeychain.m in Sources */,
 				7680181924FB81DB00A58DF0 /* AppDelegate.m in Sources */,
 				76D5D70B2504D9FE001B89CE /* ArithmeticViewController.m in Sources */,
 				7680183924FB84C200A58DF0 /* SkillTableViewCell.m in Sources */,
+				7633E8B3252C4B690037A08A /* TripartiteLoginVC.m in Sources */,
+				7666E5442529BCE7009F8DEB /* XIBDemoViewTableViewCell.m in Sources */,
 				76F37E9B2500767B00353D1F /* RSA.m in Sources */,
 				7680184724FB988600A58DF0 /* LocalStoreViewController.m in Sources */,
 				7680183F24FB8DD400A58DF0 /* SkillViewModel.m in Sources */,
 				7680182A24FB81DE00A58DF0 /* main.m in Sources */,
 				76F37E982500716900353D1F /* SafetyViewController.m in Sources */,
+				7633E8AD252C488D0037A08A /* ResidentThread.m in Sources */,
 				7680184B24FBA04800A58DF0 /* ArchiveViewController.m in Sources */,
+				7633E905252CA7D80037A08A /* PayViewController.m in Sources */,
 				76D5D6F92504C982001B89CE /* Multi-threadViewController.m in Sources */,
 				76B23C2225013AA700546C76 /* TGCDTimer.m in Sources */,
 				76884DD924FCFC5700C5FDAA /* Students+CoreDataClass.m in Sources */,
 				7647BB6F24FC860900586F4A /* Model.xcdatamodeld in Sources */,
 				7680183624FB847600A58DF0 /* SkillModel.m in Sources */,
 				767516D22503A62D00E2D54D /* HybridViewController.m in Sources */,
+				769EDB27252624EB001C0B80 /* UpgradeViewController.m in Sources */,
 				7647BB7824FC878100586F4A /* CoreDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,16 +830,29 @@
 			baseConfigurationReference = 3B629D3C2B62D528E95C078D /* Pods-SkillDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S374PN975G;
+				CODE_SIGN_ENTITLEMENTS = SkillDemo/SkillDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC/ReactiveObjC.framework/Headers\"",
+					"\"$(SRCROOT)/SkillDemo/DetailsViewController/OpenGL/OpenGlShare/include/GLTools.h\"",
+					"\"$(SRCROOT)/SkillDemo/DetailsViewController/OpenGL/OpenGlShare/include/GL/glew.h\"",
+				);
 				INFOPLIST_FILE = SkillDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PJW.SkillDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SkillDemo/DetailsViewController/OpenGL/OpenGlShare",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.altest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -683,16 +862,29 @@
 			baseConfigurationReference = 51810F0E170BA4CC4C2CD941 /* Pods-SkillDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S374PN975G;
+				CODE_SIGN_ENTITLEMENTS = SkillDemo/SkillDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC/ReactiveObjC.framework/Headers\"",
+					"\"$(SRCROOT)/SkillDemo/DetailsViewController/OpenGL/OpenGlShare/include/GLTools.h\"",
+					"\"$(SRCROOT)/SkillDemo/DetailsViewController/OpenGL/OpenGlShare/include/GL/glew.h\"",
+				);
 				INFOPLIST_FILE = SkillDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PJW.SkillDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SkillDemo/DetailsViewController/OpenGL/OpenGlShare",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.altest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

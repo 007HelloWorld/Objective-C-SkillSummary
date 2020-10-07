@@ -23,6 +23,10 @@
 #import "CrashViewController.h"
 #import "RACViewController.h"
 #import <ReactiveObjC/ReactiveObjC.h>
+#import "UpgradeViewController.h"
+#import "UseXIBViewController.h"
+#import "TripartiteLoginVC.h"
+#import "PayViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate>
@@ -120,10 +124,24 @@
     }else if (indexPath.row == 12){
         CrashViewController * crash = [CrashViewController new];
         [self.navigationController pushViewController:crash animated:YES];
+    }else if (indexPath.row == 13){
+        UpgradeViewController * upgrade = [UpgradeViewController new];
+        [self.navigationController pushViewController:upgrade animated:YES];
+    }else if (indexPath.row == 14){
+        UseXIBViewController * xib = [UseXIBViewController new];
+        [self.navigationController pushViewController:xib animated:YES];
+    }else if (indexPath.row == 15){
+        TripartiteLoginVC * login = [TripartiteLoginVC new];
+        [self.navigationController pushViewController:login animated:YES];
+    }else if (indexPath.row == 16){
+        PayViewController * pay = [PayViewController new];
+        [self.navigationController pushViewController:pay animated:YES];
     }
     
     
-
+    
+    
+    
 }
 
 @end

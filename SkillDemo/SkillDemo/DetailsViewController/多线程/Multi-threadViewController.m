@@ -7,6 +7,7 @@
 //
 
 #import "Multi-threadViewController.h"
+#import "ResidentThread.h"
 
 
 @interface Multi_threadViewController ()
@@ -68,9 +69,15 @@
  
 //    [self addDependency1];
 
-    [self adada];
+//    [self adada];
     
+    //常驻线程
+    [self performSelector:@selector(test) onThread:[ResidentThread shareThread] withObject:nil waitUntilDone:NO];
 
+}
+
+-(void)test{
+    NSLog(@"常驻线程可以使用");
 }
 
 /**
