@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  SkillDemo
+//
+//  Created by pjw on 2020/10/11.
+//  Copyright © 2020 pjw. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+
+#import "DemoUtils.h"
+#import "UIView+Extention.h"
+#import <Masonry/Masonry.h>
+#import <PNChart/PNChart.h>
+#import "NSDate+Tools.h"
+#import "NSString+EXtention.h"
+#import "JsonString.h"
+
+
+#endif /* PrefixHeader_pch */

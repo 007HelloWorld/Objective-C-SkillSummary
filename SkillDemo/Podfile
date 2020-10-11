@@ -11,5 +11,7 @@ target 'SkillDemo' do
 
     pod 'FMDB'
     pod 'ReactiveObjC', '~> 3.1.1'
+    pod 'Masonry', '~> 1.1.0'
+    pod 'PNChart', '~> 0.8.9'
 
 end

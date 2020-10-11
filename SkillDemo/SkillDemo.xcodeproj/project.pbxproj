@@ -12,6 +12,14 @@
 		7633E8BA252C556B0037A08A /* SignInApple.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E8B9252C556B0037A08A /* SignInApple.m */; };
 		7633E8BE252C56160037A08A /* YostarKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E8BD252C56160037A08A /* YostarKeychain.m */; };
 		7633E905252CA7D80037A08A /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E904252CA7D80037A08A /* PayViewController.m */; };
+		763EFA27253347EA00EF3EB3 /* NSString+EXtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 763EFA26253347EA00EF3EB3 /* NSString+EXtention.m */; };
+		763EFA2B253348BD00EF3EB3 /* NSDate+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 763EFA2A253348BD00EF3EB3 /* NSDate+Tools.m */; };
+		763EFA30253349D300EF3EB3 /* StringOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763EFA2F253349D300EF3EB3 /* StringOperationsViewController.m */; };
+		763EFA3625334DC500EF3EB3 /* EwmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763EFA3525334DC500EF3EB3 /* EwmViewController.m */; };
+		763EFA3F2533505700EF3EB3 /* MMScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763EFA3A2533505600EF3EB3 /* MMScanViewController.m */; };
+		763EFA402533505700EF3EB3 /* MMScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763EFA3B2533505700EF3EB3 /* MMScanView.m */; };
+		763EFA412533505700EF3EB3 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 763EFA3E2533505700EF3EB3 /* resource.bundle */; };
+		763EFA46253350F200EF3EB3 /* JsonString.m in Sources */ = {isa = PBXBuildFile; fileRef = 763EFA45253350F200EF3EB3 /* JsonString.m */; };
 		764317042504673D0034EE82 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764317032504673D0034EE82 /* UIWebViewController.m */; };
 		76431706250478DC0034EE82 /* indexDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 76431705250478DB0034EE82 /* indexDemo.html */; };
 		7647BB6F24FC860900586F4A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7647BB6D24FC860900586F4A /* Model.xcdatamodeld */; };
@@ -44,6 +52,21 @@
 		7680184E24FBA8CD00A58DF0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680184D24FBA8CD00A58DF0 /* Person.m */; };
 		76884DD924FCFC5700C5FDAA /* Students+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76884DD724FCFC5700C5FDAA /* Students+CoreDataClass.m */; };
 		76884DDA24FCFC5700C5FDAA /* Students+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 76884DD824FCFC5700C5FDAA /* Students+CoreDataProperties.m */; };
+		769B2E8F2532CD47007DE3D3 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2E8E2532CD47007DE3D3 /* CoverView.m */; };
+		769B2E932532CDDC007DE3D3 /* CoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2E922532CDDC007DE3D3 /* CoverViewController.m */; };
+		769B2E992532DBE5007DE3D3 /* DemoTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2E982532DBE5007DE3D3 /* DemoTabBarViewController.m */; };
+		769B2E9E2532DC77007DE3D3 /* MainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2E9D2532DC77007DE3D3 /* MainTabBar.m */; };
+		769B2EA22532DD5B007DE3D3 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2EA12532DD5B007DE3D3 /* HomePageViewController.m */; };
+		769B2EA62532DDD0007DE3D3 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2EA52532DDD0007DE3D3 /* MineViewController.m */; };
+		769B2EAB2532E953007DE3D3 /* ProgressBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2EAA2532E953007DE3D3 /* ProgressBarViewController.m */; };
+		769B2EB02532E982007DE3D3 /* SMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2EAF2532E982007DE3D3 /* SMProgressView.m */; };
+		769B2EB52532F4F6007DE3D3 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2EB42532F4F6007DE3D3 /* TimeViewController.m */; };
+		769B2EBA2532F5BD007DE3D3 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2EB92532F5BD007DE3D3 /* TimeModel.m */; };
+		769B2EBE2532F901007DE3D3 /* DemoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2EBD2532F901007DE3D3 /* DemoUtils.m */; };
+		769B2EC92532FA4C007DE3D3 /* UIView+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2EC82532FA4C007DE3D3 /* UIView+Extention.m */; };
+		769B2ECF2532FD1B007DE3D3 /* HistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2ECE2532FD1B007DE3D3 /* HistogramViewController.m */; };
+		769B2ED42532FDA7007DE3D3 /* HistogramModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2ED32532FDA7007DE3D3 /* HistogramModel.m */; };
+		769B2ED82532FE1D007DE3D3 /* HistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 769B2ED72532FE1D007DE3D3 /* HistogramView.m */; };
 		769EDB27252624EB001C0B80 /* UpgradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769EDB26252624EB001C0B80 /* UpgradeViewController.m */; };
 		76B23C1F25013A8700546C76 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B23C1E25013A8700546C76 /* TimerViewController.m */; };
 		76B23C2225013AA700546C76 /* TGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B23C2025013AA600546C76 /* TGCDTimer.m */; };
@@ -71,6 +94,21 @@
 		7633E8C3252C57DC0037A08A /* SkillDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SkillDemo.entitlements; sourceTree = "<group>"; };
 		7633E903252CA7D80037A08A /* PayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
 		7633E904252CA7D80037A08A /* PayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		763EFA25253347EA00EF3EB3 /* NSString+EXtention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+EXtention.h"; sourceTree = "<group>"; };
+		763EFA26253347EA00EF3EB3 /* NSString+EXtention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EXtention.m"; sourceTree = "<group>"; };
+		763EFA29253348BD00EF3EB3 /* NSDate+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Tools.h"; sourceTree = "<group>"; };
+		763EFA2A253348BD00EF3EB3 /* NSDate+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Tools.m"; sourceTree = "<group>"; };
+		763EFA2E253349D300EF3EB3 /* StringOperationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringOperationsViewController.h; sourceTree = "<group>"; };
+		763EFA2F253349D300EF3EB3 /* StringOperationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringOperationsViewController.m; sourceTree = "<group>"; };
+		763EFA3425334DC500EF3EB3 /* EwmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EwmViewController.h; sourceTree = "<group>"; };
+		763EFA3525334DC500EF3EB3 /* EwmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EwmViewController.m; sourceTree = "<group>"; };
+		763EFA3A2533505600EF3EB3 /* MMScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMScanViewController.m; sourceTree = "<group>"; };
+		763EFA3B2533505700EF3EB3 /* MMScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMScanView.m; sourceTree = "<group>"; };
+		763EFA3C2533505700EF3EB3 /* MMScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMScanView.h; sourceTree = "<group>"; };
+		763EFA3D2533505700EF3EB3 /* MMScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMScanViewController.h; sourceTree = "<group>"; };
+		763EFA3E2533505700EF3EB3 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
+		763EFA44253350F200EF3EB3 /* JsonString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonString.h; sourceTree = "<group>"; };
+		763EFA45253350F200EF3EB3 /* JsonString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonString.m; sourceTree = "<group>"; };
 		764317022504673D0034EE82 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
 		764317032504673D0034EE82 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
 		76431705250478DB0034EE82 /* indexDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = indexDemo.html; sourceTree = "<group>"; };
@@ -140,6 +178,37 @@
 		76884DD624FCFC5700C5FDAA /* Students+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Students+CoreDataClass.h"; sourceTree = "<group>"; };
 		76884DD724FCFC5700C5FDAA /* Students+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Students+CoreDataClass.m"; sourceTree = "<group>"; };
 		76884DD824FCFC5700C5FDAA /* Students+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Students+CoreDataProperties.m"; sourceTree = "<group>"; };
+		769B2E8D2532CD47007DE3D3 /* CoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
+		769B2E8E2532CD47007DE3D3 /* CoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
+		769B2E912532CDDC007DE3D3 /* CoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverViewController.h; sourceTree = "<group>"; };
+		769B2E922532CDDC007DE3D3 /* CoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverViewController.m; sourceTree = "<group>"; };
+		769B2E972532DBE5007DE3D3 /* DemoTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoTabBarViewController.h; sourceTree = "<group>"; };
+		769B2E982532DBE5007DE3D3 /* DemoTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTabBarViewController.m; sourceTree = "<group>"; };
+		769B2E9C2532DC77007DE3D3 /* MainTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBar.h; sourceTree = "<group>"; };
+		769B2E9D2532DC77007DE3D3 /* MainTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBar.m; sourceTree = "<group>"; };
+		769B2EA02532DD5B007DE3D3 /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		769B2EA12532DD5B007DE3D3 /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		769B2EA42532DDD0007DE3D3 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		769B2EA52532DDD0007DE3D3 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		769B2EA92532E953007DE3D3 /* ProgressBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressBarViewController.h; sourceTree = "<group>"; };
+		769B2EAA2532E953007DE3D3 /* ProgressBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressBarViewController.m; sourceTree = "<group>"; };
+		769B2EAE2532E982007DE3D3 /* SMProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMProgressView.h; sourceTree = "<group>"; };
+		769B2EAF2532E982007DE3D3 /* SMProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMProgressView.m; sourceTree = "<group>"; };
+		769B2EB32532F4F6007DE3D3 /* TimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		769B2EB42532F4F6007DE3D3 /* TimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		769B2EB82532F5BD007DE3D3 /* TimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
+		769B2EB92532F5BD007DE3D3 /* TimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
+		769B2EBC2532F901007DE3D3 /* DemoUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoUtils.h; sourceTree = "<group>"; };
+		769B2EBD2532F901007DE3D3 /* DemoUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUtils.m; sourceTree = "<group>"; };
+		769B2EC02532F95D007DE3D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		769B2EC72532FA4C007DE3D3 /* UIView+Extention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extention.h"; sourceTree = "<group>"; };
+		769B2EC82532FA4C007DE3D3 /* UIView+Extention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extention.m"; sourceTree = "<group>"; };
+		769B2ECD2532FD1B007DE3D3 /* HistogramViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistogramViewController.h; sourceTree = "<group>"; };
+		769B2ECE2532FD1B007DE3D3 /* HistogramViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistogramViewController.m; sourceTree = "<group>"; };
+		769B2ED22532FDA7007DE3D3 /* HistogramModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistogramModel.h; sourceTree = "<group>"; };
+		769B2ED32532FDA7007DE3D3 /* HistogramModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistogramModel.m; sourceTree = "<group>"; };
+		769B2ED62532FE1D007DE3D3 /* HistogramView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistogramView.h; sourceTree = "<group>"; };
+		769B2ED72532FE1D007DE3D3 /* HistogramView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistogramView.m; sourceTree = "<group>"; };
 		769EDB25252624EB001C0B80 /* UpgradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpgradeViewController.h; sourceTree = "<group>"; };
 		769EDB26252624EB001C0B80 /* UpgradeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpgradeViewController.m; sourceTree = "<group>"; };
 		76B23C1D25013A8700546C76 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
@@ -216,6 +285,50 @@
 				7633E904252CA7D80037A08A /* PayViewController.m */,
 			);
 			path = "支付";
+			sourceTree = "<group>";
+		};
+		763EFA24253347AA00EF3EB3 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				769B2EC72532FA4C007DE3D3 /* UIView+Extention.h */,
+				769B2EC82532FA4C007DE3D3 /* UIView+Extention.m */,
+				763EFA25253347EA00EF3EB3 /* NSString+EXtention.h */,
+				763EFA26253347EA00EF3EB3 /* NSString+EXtention.m */,
+				763EFA29253348BD00EF3EB3 /* NSDate+Tools.h */,
+				763EFA2A253348BD00EF3EB3 /* NSDate+Tools.m */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		763EFA2D2533497100EF3EB3 /* 字符串操作 */ = {
+			isa = PBXGroup;
+			children = (
+				763EFA2E253349D300EF3EB3 /* StringOperationsViewController.h */,
+				763EFA2F253349D300EF3EB3 /* StringOperationsViewController.m */,
+			);
+			path = "字符串操作";
+			sourceTree = "<group>";
+		};
+		763EFA3325334DA500EF3EB3 /* 扫码 */ = {
+			isa = PBXGroup;
+			children = (
+				763EFA3425334DC500EF3EB3 /* EwmViewController.h */,
+				763EFA3525334DC500EF3EB3 /* EwmViewController.m */,
+				763EFA392533505600EF3EB3 /* MMScanner */,
+			);
+			path = "扫码";
+			sourceTree = "<group>";
+		};
+		763EFA392533505600EF3EB3 /* MMScanner */ = {
+			isa = PBXGroup;
+			children = (
+				763EFA3D2533505700EF3EB3 /* MMScanViewController.h */,
+				763EFA3A2533505600EF3EB3 /* MMScanViewController.m */,
+				763EFA3C2533505700EF3EB3 /* MMScanView.h */,
+				763EFA3B2533505700EF3EB3 /* MMScanView.m */,
+				763EFA3E2533505700EF3EB3 /* resource.bundle */,
+			);
+			path = MMScanner;
 			sourceTree = "<group>";
 		};
 		7647BB6C24FC832600586F4A /* CoreData */ = {
@@ -356,6 +469,12 @@
 				7680182324FB81DE00A58DF0 /* Assets.xcassets */,
 				7680182524FB81DE00A58DF0 /* LaunchScreen.storyboard */,
 				7680182824FB81DE00A58DF0 /* Info.plist */,
+				763EFA24253347AA00EF3EB3 /* 分类 */,
+				769B2EBC2532F901007DE3D3 /* DemoUtils.h */,
+				769B2EBD2532F901007DE3D3 /* DemoUtils.m */,
+				763EFA44253350F200EF3EB3 /* JsonString.h */,
+				763EFA45253350F200EF3EB3 /* JsonString.m */,
+				769B2EC02532F95D007DE3D3 /* PrefixHeader.pch */,
 				7680182924FB81DE00A58DF0 /* main.m */,
 			);
 			path = SkillDemo;
@@ -400,6 +519,13 @@
 		7680184024FB97B700A58DF0 /* DetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				763EFA3325334DA500EF3EB3 /* 扫码 */,
+				763EFA2D2533497100EF3EB3 /* 字符串操作 */,
+				769B2ECC2532FCF7007DE3D3 /* 柱形图 */,
+				769B2EB22532F4E1007DE3D3 /* 时间相关操作 */,
+				769B2EA82532E932007DE3D3 /* 进度条 */,
+				769B2E962532DB6F007DE3D3 /* 自定义Tabbar */,
+				769B2E8C2532CD12007DE3D3 /* 自定义遮盖 */,
 				7633E902252CA7A80037A08A /* 支付 */,
 				7633E8B0252C4B3F0037A08A /* 三方登录 */,
 				7666E5472529C7C5009F8DEB /* OpenGL */,
@@ -464,6 +590,67 @@
 				7680184D24FBA8CD00A58DF0 /* Person.m */,
 			);
 			path = "归档";
+			sourceTree = "<group>";
+		};
+		769B2E8C2532CD12007DE3D3 /* 自定义遮盖 */ = {
+			isa = PBXGroup;
+			children = (
+				769B2E912532CDDC007DE3D3 /* CoverViewController.h */,
+				769B2E922532CDDC007DE3D3 /* CoverViewController.m */,
+				769B2E8D2532CD47007DE3D3 /* CoverView.h */,
+				769B2E8E2532CD47007DE3D3 /* CoverView.m */,
+			);
+			path = "自定义遮盖";
+			sourceTree = "<group>";
+		};
+		769B2E962532DB6F007DE3D3 /* 自定义Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				769B2E972532DBE5007DE3D3 /* DemoTabBarViewController.h */,
+				769B2E982532DBE5007DE3D3 /* DemoTabBarViewController.m */,
+				769B2E9C2532DC77007DE3D3 /* MainTabBar.h */,
+				769B2E9D2532DC77007DE3D3 /* MainTabBar.m */,
+				769B2EA02532DD5B007DE3D3 /* HomePageViewController.h */,
+				769B2EA12532DD5B007DE3D3 /* HomePageViewController.m */,
+				769B2EA42532DDD0007DE3D3 /* MineViewController.h */,
+				769B2EA52532DDD0007DE3D3 /* MineViewController.m */,
+			);
+			path = "自定义Tabbar";
+			sourceTree = "<group>";
+		};
+		769B2EA82532E932007DE3D3 /* 进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				769B2EA92532E953007DE3D3 /* ProgressBarViewController.h */,
+				769B2EAA2532E953007DE3D3 /* ProgressBarViewController.m */,
+				769B2EAE2532E982007DE3D3 /* SMProgressView.h */,
+				769B2EAF2532E982007DE3D3 /* SMProgressView.m */,
+			);
+			path = "进度条";
+			sourceTree = "<group>";
+		};
+		769B2EB22532F4E1007DE3D3 /* 时间相关操作 */ = {
+			isa = PBXGroup;
+			children = (
+				769B2EB32532F4F6007DE3D3 /* TimeViewController.h */,
+				769B2EB42532F4F6007DE3D3 /* TimeViewController.m */,
+				769B2EB82532F5BD007DE3D3 /* TimeModel.h */,
+				769B2EB92532F5BD007DE3D3 /* TimeModel.m */,
+			);
+			path = "时间相关操作";
+			sourceTree = "<group>";
+		};
+		769B2ECC2532FCF7007DE3D3 /* 柱形图 */ = {
+			isa = PBXGroup;
+			children = (
+				769B2ECD2532FD1B007DE3D3 /* HistogramViewController.h */,
+				769B2ECE2532FD1B007DE3D3 /* HistogramViewController.m */,
+				769B2ED22532FDA7007DE3D3 /* HistogramModel.h */,
+				769B2ED32532FDA7007DE3D3 /* HistogramModel.m */,
+				769B2ED62532FE1D007DE3D3 /* HistogramView.h */,
+				769B2ED72532FE1D007DE3D3 /* HistogramView.m */,
+			);
+			path = "柱形图";
 			sourceTree = "<group>";
 		};
 		769EDB24252624C4001C0B80 /* 版本升级提示 */ = {
@@ -598,6 +785,7 @@
 				7666E5452529BCE7009F8DEB /* XIBDemoViewTableViewCell.xib in Resources */,
 				767516D42503A78000E2D54D /* index.html in Resources */,
 				76431706250478DC0034EE82 /* indexDemo.html in Resources */,
+				763EFA412533505700EF3EB3 /* resource.bundle in Resources */,
 				7680182424FB81DE00A58DF0 /* Assets.xcassets in Resources */,
 				7680182224FB81DB00A58DF0 /* Main.storyboard in Resources */,
 			);
@@ -652,33 +840,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763EFA27253347EA00EF3EB3 /* NSString+EXtention.m in Sources */,
 				7666E5382529BB7B009F8DEB /* UseXIBViewController.m in Sources */,
 				764E27F0251F359900E12BD6 /* NSArray+PJW.m in Sources */,
 				764E2806251F568D00E12BD6 /* RACViewController.m in Sources */,
+				769B2EBE2532F901007DE3D3 /* DemoUtils.m in Sources */,
 				7680181F24FB81DB00A58DF0 /* ViewController.m in Sources */,
+				769B2E8F2532CD47007DE3D3 /* CoverView.m in Sources */,
 				76D5D7002504CD51001B89CE /* LocalDeliveryViewController.m in Sources */,
+				769B2E932532CDDC007DE3D3 /* CoverViewController.m in Sources */,
+				769B2EB02532E982007DE3D3 /* SMProgressView.m in Sources */,
 				764E27EC251F356000E12BD6 /* CrashViewController.m in Sources */,
+				769B2E9E2532DC77007DE3D3 /* MainTabBar.m in Sources */,
+				763EFA3625334DC500EF3EB3 /* EwmViewController.m in Sources */,
 				7680183C24FB879F00A58DF0 /* SkillTableDataSource.m in Sources */,
 				7680184E24FBA8CD00A58DF0 /* Person.m in Sources */,
 				764317042504673D0034EE82 /* UIWebViewController.m in Sources */,
 				76D5D7042504D38A001B89CE /* RunTimeViewController.m in Sources */,
 				764E27E6251EF14600E12BD6 /* DateViewController.m in Sources */,
+				769B2EAB2532E953007DE3D3 /* ProgressBarViewController.m in Sources */,
+				769B2EB52532F4F6007DE3D3 /* TimeViewController.m in Sources */,
 				76D5D7072504D4DB001B89CE /* NSArray+Demo.m in Sources */,
 				76884DDA24FCFC5700C5FDAA /* Students+CoreDataProperties.m in Sources */,
 				764E280A251F58FA00E12BD6 /* BtnClickV.m in Sources */,
 				7633E8BA252C556B0037A08A /* SignInApple.m in Sources */,
 				76B23C1F25013A8700546C76 /* TimerViewController.m in Sources */,
+				769B2EBA2532F5BD007DE3D3 /* TimeModel.m in Sources */,
 				7633E8BE252C56160037A08A /* YostarKeychain.m in Sources */,
 				7680181924FB81DB00A58DF0 /* AppDelegate.m in Sources */,
+				769B2ED82532FE1D007DE3D3 /* HistogramView.m in Sources */,
 				76D5D70B2504D9FE001B89CE /* ArithmeticViewController.m in Sources */,
 				7680183924FB84C200A58DF0 /* SkillTableViewCell.m in Sources */,
 				7633E8B3252C4B690037A08A /* TripartiteLoginVC.m in Sources */,
 				7666E5442529BCE7009F8DEB /* XIBDemoViewTableViewCell.m in Sources */,
 				76F37E9B2500767B00353D1F /* RSA.m in Sources */,
 				7680184724FB988600A58DF0 /* LocalStoreViewController.m in Sources */,
+				769B2EA62532DDD0007DE3D3 /* MineViewController.m in Sources */,
+				769B2EA22532DD5B007DE3D3 /* HomePageViewController.m in Sources */,
+				763EFA402533505700EF3EB3 /* MMScanView.m in Sources */,
 				7680183F24FB8DD400A58DF0 /* SkillViewModel.m in Sources */,
 				7680182A24FB81DE00A58DF0 /* main.m in Sources */,
 				76F37E982500716900353D1F /* SafetyViewController.m in Sources */,
+				763EFA2B253348BD00EF3EB3 /* NSDate+Tools.m in Sources */,
+				763EFA3F2533505700EF3EB3 /* MMScanViewController.m in Sources */,
 				7633E8AD252C488D0037A08A /* ResidentThread.m in Sources */,
 				7680184B24FBA04800A58DF0 /* ArchiveViewController.m in Sources */,
 				7633E905252CA7D80037A08A /* PayViewController.m in Sources */,
@@ -687,9 +891,15 @@
 				76884DD924FCFC5700C5FDAA /* Students+CoreDataClass.m in Sources */,
 				7647BB6F24FC860900586F4A /* Model.xcdatamodeld in Sources */,
 				7680183624FB847600A58DF0 /* SkillModel.m in Sources */,
+				769B2EC92532FA4C007DE3D3 /* UIView+Extention.m in Sources */,
+				763EFA46253350F200EF3EB3 /* JsonString.m in Sources */,
+				769B2ED42532FDA7007DE3D3 /* HistogramModel.m in Sources */,
+				763EFA30253349D300EF3EB3 /* StringOperationsViewController.m in Sources */,
 				767516D22503A62D00E2D54D /* HybridViewController.m in Sources */,
 				769EDB27252624EB001C0B80 /* UpgradeViewController.m in Sources */,
 				7647BB7824FC878100586F4A /* CoreDataViewController.m in Sources */,
+				769B2ECF2532FD1B007DE3D3 /* HistogramViewController.m in Sources */,
+				769B2E992532DBE5007DE3D3 /* DemoTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,6 +1043,7 @@
 				CODE_SIGN_ENTITLEMENTS = SkillDemo/SkillDemo.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SkillDemo/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",
@@ -865,6 +1076,7 @@
 				CODE_SIGN_ENTITLEMENTS = SkillDemo/SkillDemo.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SkillDemo/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers\"",

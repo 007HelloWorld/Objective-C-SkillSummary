@@ -2,21 +2,33 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - Masonry (1.1.0)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
   - ReactiveObjC (3.1.1)
+  - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - FMDB
+  - Masonry (~> 1.1.0)
+  - PNChart (~> 0.8.9)
   - ReactiveObjC (~> 3.1.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FMDB
+    - Masonry
+    - PNChart
     - ReactiveObjC
+    - UICountingLabel
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: 3564488ee36941a5de14690c8864a5e459dcc68b
+PODFILE CHECKSUM: 92ca680f4ee20f1ebb00ad942f1d6c98f1044e9d
 
 COCOAPODS: 1.9.0

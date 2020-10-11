@@ -14,6 +14,10 @@
 
 @property(nonatomic,assign)NSInteger ticketSurplusCount;
 @property(nonatomic,strong)NSLock * lock;
+@property(nonatomic,strong)UIImageView * downImageV;
+
+
+
 
 @end
 
@@ -24,55 +28,187 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
-//     串行队列的创建方法
-//    dispatch_queue_t queue = dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_SERIAL);
-//
-//    // 并发队列的创建方法
-//    dispatch_queue_t queue1 = dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_CONCURRENT);
-//
-//    // 主队列的获取方法
-//    dispatch_queue_t queue2 = dispatch_get_main_queue();
-//
-//    // 全局并发队列的获取方法
-//    dispatch_queue_t queue3 = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-//
-//    // 同步执行任务创建方法
-//    dispatch_sync(queue1, ^{
-//        // 这里放同步执行任务代码
-//        NSLog(@"这里放同步执行任务代码");
-//
-//    });
-//    // 异步执行任务创建方法
-//    dispatch_async(queue3, ^{
-//        // 这里放异步执行任务代码
-//        NSLog(@"这里放异步执行任务代码");
-//    });
+    //普通的操作
+//    [self normalOperations];
     
     
     
     //下载多张图片，最后汇总成一张图片
-    
-    
+//    self.downImageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+//
+//    [self DownLoadImage:^(UIImage *image1, UIImage *image2, UIImage *image3) {
+//         //合并
+//         UIGraphicsBeginImageContextWithOptions(CGSizeMake(375, 450), NO, 0.0);
+//         [image1 drawInRect:CGRectMake(0, 100, 100, 50)];
+//         [image2 drawInRect:CGRectMake(0, 150, 100, 50)];
+//         [image3 drawInRect:CGRectMake(0, 200, 100, 50)];
+//        //给ImageView赋值
+//         self.downImageV.image = UIGraphicsGetImageFromCurrentImageContext();
+//         //关闭上下文
+//         UIGraphicsEndImageContext();
+//
+//    }];
+//    [self.view addSubview:self.downImageV];
+
     
     
     //线程依赖
 //    [self addDependency];
     
-    //卖票,线程安全
+    
+    
+    //卖票系统,线程安全
 //    [self initTicketStatusSave];
 //    [self saleTicketSafe];
+    
+    
+    
     
     //等所有线程执行完毕后，在执行最后的汇总任务
 //    [self groupNotify];
     
     
- 
-//    [self addDependency1];
-
+    //先执行abc，在执行de
 //    [self adada];
     
     //常驻线程
-    [self performSelector:@selector(test) onThread:[ResidentThread shareThread] withObject:nil waitUntilDone:NO];
+//    [self performSelector:@selector(test) onThread:[ResidentThread shareThread] withObject:nil waitUntilDone:NO];
+
+    //NSOperationQueue的事务性，顺序行，依赖关系
+    //顺序行
+    [self addDependenceInCustom];                                                                                             
+    
+    //
+}
+
+- (void)addDependenceInCustom
+{
+    //NSOperationQueue 对于添加到队列中的操作，首先进入准备就绪的状态（就绪状态取决于操作之间的依赖关系），然后进入就绪状态的操作的开始执行顺序（非结束执行顺序）由操作之间相对的优先级决定（优先级是操作对象自身的属性）。
+    
+
+    NSLog(@"创建添加任务%@",[NSThread currentThread]);
+    NSOperationQueue *customQueue = [[NSOperationQueue alloc]init];
+    customQueue.maxConcurrentOperationCount = 1;
+    NSInvocationOperation *op1 = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(task:) object:@"1"];
+    
+    NSInvocationOperation *op2 = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(task:) object:@"2"];
+    
+    NSInvocationOperation *op3 = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(task:) object:@"3"];
+    
+    NSInvocationOperation *op4 = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(task:) object:@"4"];
+    
+    //isReady属性如果为YES的时候，该任务处于就绪状态，就等待系统调度执行。如果任务有依赖关系的话，该任务的isReady属性需要在其所属的依赖任务执行完成后，才为YES。
+    //默认情况下，操作的queuePriority(队列优先级)为0 NSOperationQueuePriorityNormal 正常优先级。
+    //都处于就绪状态下的操作，才开始按照优先级顺序来执行。 优先级高的是说系统调度的概率会大一些，但是也不能确保完全会按照优先级来，如果要设置操作的执行顺序，最有效也最安全的做法还是设置依赖关系。
+//    [op1 addDependency:op2];
+//    [op2 addDependency:op3];
+    /*注意:两个任务不能相互依赖，如果相互依赖，则会出现死锁，都执行不了
+     [op1 addDependency:op2];
+     [op2 addDependency:op1];
+     这种相互依赖是错误的。
+     */
+    op4.queuePriority = NSOperationQueuePriorityVeryHigh;
+//    op2.queuePriority = NSOperationQueuePriorityHigh;
+//    op3.queuePriority = NSOperationQueuePriorityLow;
+    [customQueue addOperation:op1];
+    [customQueue addOperation:op2];
+    [customQueue addOperation:op3];
+    [customQueue addOperation:op4];
+}
+
+-(void)task:(NSInvocationOperation *)open{
+    NSLog(@"%@",open);
+}
+
+
+-(void)DownLoadImage:(void(^)(UIImage *image1,UIImage *image2,UIImage *image3))downLoadSuccess{
+
+     __weak typeof(self) weakSelf = self;
+    // 创建分组
+    dispatch_group_t  group = dispatch_group_create();
+    // 创建队列
+    dispatch_queue_t  queue = dispatch_queue_create("downLoadImage", DISPATCH_QUEUE_CONCURRENT);
+
+    // 往分组中添加任务1
+    // 请求依次执行  与 dispatch_group_leave 配对使用
+    dispatch_group_enter(group);
+    __block UIImage *image1 = nil;
+    dispatch_group_async(group, queue, ^{
+         NSLog(@"第1张图片开始下载");
+       //处理耗时的操作
+        image1 = [weakSelf imageWithUrl:@"https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2534506313,1688529724&fm=26&gp=0.jpg"];
+        dispatch_group_leave(group);
+        NSLog(@"第1张图片下载完成");
+        
+    });
+
+    // 往分组中添加任务2
+    // 请求依次执行  与 dispatch_group_leave 配对使用
+    dispatch_group_enter(group);
+    __block UIImage *image2 = nil;
+    dispatch_group_async(group, queue, ^{
+         NSLog(@"第2张图片开始下载");
+        //处理耗时的操作
+        image2 = [weakSelf imageWithUrl:@"http://img.redocn.com/200906/2/321782_124390997641aY.jpg"];
+        dispatch_group_leave(group);
+        NSLog(@"第2张图片下载完成");
+        
+    });
+
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);// A,B同时执行, 执行完才会执行下面的
+    // 往分组中添加任务3
+    // 请求依次执行  与 dispatch_group_leave 配对使用
+    dispatch_group_enter(group);
+     __block UIImage *image3 = nil;
+    dispatch_group_async(group, queue, ^{
+         NSLog(@"第3张图片开始下载");
+        //处理耗时的操作
+        image3 = [weakSelf imageWithUrl:@"https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3892521478,1695688217&fm=26&gp=0.jpg"];
+        
+        NSLog(@"第3张图片下载完成");
+        dispatch_group_leave(group);
+        
+    });
+
+    // 分组中任务完成后通知该block执行
+    dispatch_group_notify(group, queue, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // 通知主线程刷新UI
+            downLoadSuccess(image1,image2,image3);
+        });
+    });
+}
+
+- (UIImage *) imageWithUrl :(NSString *) urlStr{
+      NSURL *url = [NSURL URLWithString:urlStr];
+      NSData *data = [NSData dataWithContentsOfURL:url];
+      return [UIImage imageWithData:data];
+}
+
+-(void)normalOperations{
+    // 串行队列的创建方法
+    dispatch_queue_t queue = dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_SERIAL);
+
+    // 并发队列的创建方法
+    dispatch_queue_t queue1 = dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_CONCURRENT);
+
+    // 主队列的获取方法
+    dispatch_queue_t queue2 = dispatch_get_main_queue();
+
+    // 全局并发队列的获取方法
+    dispatch_queue_t queue3 = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+
+    // 同步执行任务创建方法
+    dispatch_sync(queue1, ^{
+        // 这里放同步执行任务代码
+        NSLog(@"这里放同步执行任务代码");
+
+    });
+    // 异步执行任务创建方法
+    dispatch_async(queue3, ^{
+        // 这里放异步执行任务代码
+        NSLog(@"这里放异步执行任务代码");
+    });
 
 }
 
@@ -192,32 +328,6 @@
     });
 
     NSLog(@"是否阻塞主线程"); // 不会
-}
-
-//A,B,C是同步执行的任务
--(void)addDependency1{
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    // 创建3个操作
-    NSOperation *a = [NSBlockOperation blockOperationWithBlock:^{
-        NSLog(@"operationA---");
-        
-    }];
-    NSOperation *b = [NSBlockOperation blockOperationWithBlock:^{
-        NSLog(@"operationB---");
-        
-    }];
-    NSOperation *c = [NSBlockOperation blockOperationWithBlock:^{
-        NSLog(@"operationC---");
-        
-    }];
-    // 添加依赖
-    [c addDependency:b];
-    [c addDependency:a];
-    // 执行操作
-    [queue addOperation:a];
-    [queue addOperation:b];
-    [queue addOperation:c];
-
 }
 
 //先执行abc，在执行de

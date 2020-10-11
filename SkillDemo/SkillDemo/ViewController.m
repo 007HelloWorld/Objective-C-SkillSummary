@@ -27,6 +27,13 @@
 #import "UseXIBViewController.h"
 #import "TripartiteLoginVC.h"
 #import "PayViewController.h"
+#import "CoverViewController.h"
+#import "DemoTabBarViewController.h"
+#import "ProgressBarViewController.h"
+#import "TimeViewController.h"
+#import "HistogramViewController.h"
+#import "StringOperationsViewController.h"
+#import "EwmViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate>
@@ -136,7 +143,29 @@
     }else if (indexPath.row == 16){
         PayViewController * pay = [PayViewController new];
         [self.navigationController pushViewController:pay animated:YES];
+    }else if (indexPath.row == 17){
+        CoverViewController * cover = [CoverViewController new];
+        [self.navigationController pushViewController:cover animated:YES];
+    }else if (indexPath.row == 18){
+        DemoTabBarViewController * tab = [DemoTabBarViewController new];
+        [self.navigationController pushViewController:tab animated:YES];
+    }else if (indexPath.row == 19){
+        ProgressBarViewController * progress = [ProgressBarViewController new];
+        [self.navigationController pushViewController:progress animated:YES];
+    }else if (indexPath.row == 20){
+        TimeViewController * time = [TimeViewController new];
+        [self.navigationController pushViewController:time animated:YES];
+    }else if (indexPath.row == 21){
+        HistogramViewController * histogram = [HistogramViewController new];
+        [self.navigationController pushViewController:histogram animated:YES];
+    }else if (indexPath.row == 22){
+        StringOperationsViewController * stringOperations = [StringOperationsViewController new];
+        [self.navigationController pushViewController:stringOperations animated:YES];
+    }else if (indexPath.row == 23){
+        EwmViewController * ewm = [EwmViewController new];
+        [self.navigationController pushViewController:ewm animated:YES];
     }
+    
     
     
     
