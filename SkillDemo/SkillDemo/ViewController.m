@@ -34,6 +34,8 @@
 #import "HistogramViewController.h"
 #import "StringOperationsViewController.h"
 #import "EwmViewController.h"
+#import "AnimationVC.h"
+#import "ScreenViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate>
@@ -118,7 +120,8 @@
         ArithmeticViewController * arithmetic = [ArithmeticViewController new];
         [self.navigationController pushViewController:arithmetic animated:YES];
     }else if (indexPath.row == 8){
-        
+        AnimationVC * vc = [AnimationVC new];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 9){
         RACViewController * rac = [RACViewController new];
         [self.navigationController pushViewController:rac animated:YES];
@@ -164,7 +167,14 @@
     }else if (indexPath.row == 23){
         EwmViewController * ewm = [EwmViewController new];
         [self.navigationController pushViewController:ewm animated:YES];
+    }else if (indexPath.row == 24){
+        ScreenViewController * screen = [ScreenViewController new];
+        [self.navigationController pushViewController:screen animated:YES];
+    }else if (indexPath.row == 25){
+//        EwmViewController * ewm = [EwmViewController new];
+//        [self.navigationController pushViewController:ewm animated:YES];
     }
+    
     
     
     

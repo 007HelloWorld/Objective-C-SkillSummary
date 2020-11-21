@@ -19,15 +19,10 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self dieTausendstel];
     
     
 }
 
--(void)dieTausendstel{
-    NSString * str = [NSString thousandsString:[NSString stringWithFormat:@"%lf",(double)1000000]];
-    NSLog(@"千分位输出            %@",str);
-}
 
 
 @end

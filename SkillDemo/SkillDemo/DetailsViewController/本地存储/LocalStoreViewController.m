@@ -9,6 +9,7 @@
 #import "LocalStoreViewController.h"
 #import "ArchiveViewController.h"
 #import "CoreDataViewController.h"
+#import "FMDBViewController.h"
 
 
 @interface LocalStoreViewController ()
@@ -49,7 +50,8 @@
         CoreDataViewController * coreData = [CoreDataViewController new];
         [self.navigationController pushViewController:coreData animated:YES];
     }else if (index == 2){
-        
+        FMDBViewController * fmdb = [FMDBViewController new];
+        [self.navigationController pushViewController:fmdb animated:YES];
     }else if (index == 3){
         
     }

@@ -13,5 +13,8 @@ target 'SkillDemo' do
     pod 'ReactiveObjC', '~> 3.1.1'
     pod 'Masonry', '~> 1.1.0'
     pod 'PNChart', '~> 0.8.9'
+    pod 'SVGAPlayer'
+    pod 'YYKit','1.0.9'
+
 
 end

@@ -19,6 +19,53 @@
 #import "NSDate+Tools.h"
 #import "NSString+EXtention.h"
 #import "JsonString.h"
+#import "MBProgressHUD.h"
+#import "WXApi.h"
+#import "UPPaymentControl.h"//银联支付
+#import "ZTUtil.h"
+#import <YYKit.h>
+
+
+#define SHOW_TIP_IN_WINDOW(STR) [MBProgressHUD showMessageInView:[UIApplication sharedApplication].keyWindow withText:STR]
+
+
+
+
+
+
+
+
+#define WEAKSELF    __weak typeof(self) weakSelf = self;
+
+
+//银联支付
+#define kMode_Development             @"01"//支付环境
+#define kURL_TN_Normal                @"http://101.231.204.84:8091/sim/getacptn"
+#define kURL_TN_Configure             @"http://101.231.204.84:8091/sim/app.jsp?user=123456789"
+#define kResult           @"支付结果：%@"
+
+
+//----------------------------------------------------------------------------------------------------------------------
+// 支付宝
+//----------------------------------------------------------------------------------------------------------------------
+#define ALiPayPartner           @"2088021182417923"
+#define ALiPaySeller            @"jmh.8888@163.com"
+static NSString *const kFuelAliPayPartner       = @"2088521343736525";
+static NSString *const kFuelAliPaySeller        = @"lhwhxm@zt3000.com";
+static NSString *const kFuelAliPayPrivateKey    = @"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCM/Xb9DHeRoJim+4xJiFZzyrPIGgneYgiC5Sw1SYSAaIpdnulbPl9Eeqwv2qWASj7h4gWmXPTroUlUnRzceMF2nujT6rr7CE67nof6SbT2yFjKaiymG/+cQPjZljiHfj4HaJwQI7b3NgiiZ6bkIFpilUPYHnOaXuHsHNOYSh1xNaKLRy3n47eQuccJMZGBq1LqnQZ16SPkTw09qXyExhmAQGPMuoQPXHskaXHfoUjMRcWtIwfU63yhzolXDYL6sEjmGf+wScBbMINelQd+hQLMBWh47tiJdDF8zea90rQzYbm0m82gcgfjYW8P3wTJLR7oZIocINYGohlTIIoeqh0xAgMBAAECggEBAIAfhhYHUlFAg/ia962K/CVVu3LIVteEdv+ci0QRfxvB5JuXYbDNSX3NjNQf+e5Pij1zTHcWWmwWsbD25ddk1UqatjJ+SVT/A610L1W/zXfGMQog2lpJb0vrrzjsToqyqmPJKKlyCz80FzyevQbqb7jOtEydv6g1OVF8EL1//Kl3HYJjOGTdv0NUyQREqzApVR9EqR3250ZT54Np534Wo1yIuK67rRvW2WhjCV0RLRw2AagHo+Uao632NhGRzIJjhFcSNdXIrXOjdt+3v6Ql9C+RqTcdn0IvXR30WWpOBu3VOW9pMkGwFc4Arh+U53+ZsUSI+0+dP83Eal8rAlb30BECgYEAz9pEQEub1mRHuexslc6TEgEWkXyEsamRI0Vgvm1zLkt2PQv9yREXEwOcR1prj5Hw0jlNu2AOUD1V+5XiZuL3or7yz3nF/6T3ZwxCE7XHOUDWAzTRa+/ciHEwEL61eNjKrLWfdpJ311x5SfnEvoEamqx00pRgz0XeHasoX+uksC8CgYEAraY6TDpnZTw/GqyA1DOd7j3I7UksBxbGlsWBJKuCTIb55MPZCEPE4IGD5TYW/Rp5r7MitLeVJRC2Fy+1ZC+WGEH7Vwlr5BQL2HGN2Bo3Zfeef8r9KINQpwuTa0wGYDfbklT+19vho4uSp//kbVxxJeYYQsOQthVbzflF/sJOUJ8CgYBA8YTTxgwKH8kdeZav9ByVyos/p/VaAY5cw+eneFE9zMxD5MRGF7Xq9fzVepYTBNmHBeqYujmerpt4AWv9E7umOR1q4DSSXPwEUZsvx2NZKz3zQISSwh5Y72zCPqQ6/xnMfu81QCx7uOQYzhbAI1ypqWrTBRN+j+kHwhvaZKlPdwKBgEaSt0DBv8HSEWd60kTr0XTA4YcmZOFgrUcbb9gCaEtH1AnYWr1UJZCEsqEWMZOeDfSNXj6KGfBdcVPNDPBxspObRVXjO1kPmJzX0akRRpCHaYBQdEDh1YZ+WuSRmknCiddX+daqw3JfSDRE+IZFuqqHcDa6GncWCSCV/Y+DUqbLAoGAbrHj6WcmWUlK+fKUUcqldxxOxSAZtPkQa2X1G9I7OKGRlwrkNKbq2n8CSJzxNEGCs0l6g2lLrfD8ngLP0rS9TkNdp7wSfYxP+CsWP06JzhoiRFn9pM8bfr2+tACorChRksgqTRJzhiNz5IVQYsn+vrUnsJYNwXqOBzK/pYXE7cw=";
+
+
+
+//微信支付
+#define APP_Description @"ZT3000"
+#import "WXApi.h"
+#define APP_ID          @"wx9fce0509363293c9"               //APPID
+#import "WXPayModel.h"
+//商户号，填写商户对应参数
+#define MCH_ID          @"1407869202"
+//商户API密钥，填写相应参数
+#define PARTNER_ID      @"jslhwljsb1qazxsw2zt3000wechatpay"
+
 
 
 #endif /* PrefixHeader_pch */

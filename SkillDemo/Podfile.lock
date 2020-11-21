@@ -5,30 +5,53 @@ PODS:
   - Masonry (1.1.0)
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
+  - Protobuf (3.11.4)
   - ReactiveObjC (3.1.1)
+  - SSZipArchive (2.2.2)
+  - SVGAPlayer (2.5.2):
+    - SVGAPlayer/Core (= 2.5.2)
+    - SVGAPlayer/ProtoFiles (= 2.5.2)
+  - SVGAPlayer/Core (2.5.2):
+    - SSZipArchive (>= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.5.2):
+    - Protobuf (~> 3.4)
   - UICountingLabel (1.2.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - FMDB
   - Masonry (~> 1.1.0)
   - PNChart (~> 0.8.9)
   - ReactiveObjC (~> 3.1.1)
+  - SVGAPlayer
+  - YYKit (= 1.0.9)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FMDB
     - Masonry
     - PNChart
+    - Protobuf
     - ReactiveObjC
+    - SSZipArchive
+    - SVGAPlayer
     - UICountingLabel
+    - YYKit
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
+  SVGAPlayer: c666a7886b72ee77d494c49aa4fd61df175dd103
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 92ca680f4ee20f1ebb00ad942f1d6c98f1044e9d
+PODFILE CHECKSUM: 65abae5352e72c6a3849e0b351d299e4a7dbf5c4
 
 COCOAPODS: 1.9.0
