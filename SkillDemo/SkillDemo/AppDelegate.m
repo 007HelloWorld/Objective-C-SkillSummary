@@ -18,6 +18,13 @@
 #import "UPPaymentControl.h"
 //激光推送
 #import <JPUSHService.h>
+//腾讯bugly
+#import <Bugly/Bugly.h>
+
+
+
+//Bugly 的AppId 生产环境
+#define BuglyAppId @"ad5c529458asd"//ad5c529458
 
 @interface AppDelegate ()<UNUserNotificationCenterDelegate,JPUSHRegisterDelegate>
 
@@ -36,7 +43,10 @@
     
     //激光代码初始化
     [self setupJPushWithLunchOptions:launchOptions isProduction:YES withAppKey:@"d205157afdbb491ec203700edd"];//d205157afdbb491ec203700e
-    
+
+    //初始化Bugly
+    [Bugly startWithAppId:BuglyAppId];
+
     
     return YES;
 }
@@ -305,6 +315,11 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center openSettingsForNotification:(UNNotification *)notification {
     NSLog(@"**********************");
 }
+
+- (void)jpushNotificationAuthorization:(JPAuthorizationStatus)status withInfo:(NSDictionary *)info {
+    NSLog(@"**********************");
+}
+
 
 //登录账号的时候登录
 -(void)login{
