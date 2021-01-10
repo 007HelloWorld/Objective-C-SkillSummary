@@ -22,7 +22,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     for (int i = 0; i < 4; i ++) {
-        UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100 + 100 * i, 100, 60)];
+        UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 150 + 100 * i, 100, 60)];
         if (i == 0) {
             [btn setTitle:@"存值" forState:UIControlStateNormal];
         }else if (i == 1){

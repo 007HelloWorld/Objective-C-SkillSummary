@@ -24,6 +24,7 @@
 #import "UPPaymentControl.h"//银联支付
 #import "ZTUtil.h"
 #import <YYKit.h>
+//#import <YYModel.h>
 
 
 #define SHOW_TIP_IN_WINDOW(STR) [MBProgressHUD showMessageInView:[UIApplication sharedApplication].keyWindow withText:STR]

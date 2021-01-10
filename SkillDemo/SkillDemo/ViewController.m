@@ -36,6 +36,7 @@
 #import "EwmViewController.h"
 #import "AnimationVC.h"
 #import "ScreenViewController.h"
+#import "ComplexModelVC.h"
 
 
 @interface ViewController ()<UITableViewDelegate>
@@ -171,8 +172,8 @@
         ScreenViewController * screen = [ScreenViewController new];
         [self.navigationController pushViewController:screen animated:YES];
     }else if (indexPath.row == 25){
-//        EwmViewController * ewm = [EwmViewController new];
-//        [self.navigationController pushViewController:ewm animated:YES];
+        ComplexModelVC * vc = [ComplexModelVC new];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
     

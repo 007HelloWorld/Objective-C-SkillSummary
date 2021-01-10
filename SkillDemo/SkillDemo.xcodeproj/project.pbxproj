@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76069D0025AAE49500E92C3C /* JPushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 76069CFF25AAE49500E92C3C /* JPushVC.m */; };
+		761972442581DF8C003AB059 /* ComplexModelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 761972432581DF8C003AB059 /* ComplexModelVC.m */; };
+		761972492581DF9A003AB059 /* ComplexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 761972482581DF9A003AB059 /* ComplexModel.m */; };
 		7633E8AD252C488D0037A08A /* ResidentThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E8AC252C488D0037A08A /* ResidentThread.m */; };
 		7633E8B3252C4B690037A08A /* TripartiteLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E8B2252C4B690037A08A /* TripartiteLoginVC.m */; };
 		7633E8BA252C556B0037A08A /* SignInApple.m in Sources */ = {isa = PBXBuildFile; fileRef = 7633E8B9252C556B0037A08A /* SignInApple.m */; };
@@ -119,6 +122,12 @@
 /* Begin PBXFileReference section */
 		3B629D3C2B62D528E95C078D /* Pods-SkillDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillDemo.debug.xcconfig"; path = "Target Support Files/Pods-SkillDemo/Pods-SkillDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		51810F0E170BA4CC4C2CD941 /* Pods-SkillDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillDemo.release.xcconfig"; path = "Target Support Files/Pods-SkillDemo/Pods-SkillDemo.release.xcconfig"; sourceTree = "<group>"; };
+		76069CFE25AAE49500E92C3C /* JPushVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPushVC.h; sourceTree = "<group>"; };
+		76069CFF25AAE49500E92C3C /* JPushVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPushVC.m; sourceTree = "<group>"; };
+		761972422581DF8C003AB059 /* ComplexModelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplexModelVC.h; sourceTree = "<group>"; };
+		761972432581DF8C003AB059 /* ComplexModelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplexModelVC.m; sourceTree = "<group>"; };
+		761972472581DF9A003AB059 /* ComplexModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplexModel.h; sourceTree = "<group>"; };
+		761972482581DF9A003AB059 /* ComplexModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplexModel.m; sourceTree = "<group>"; };
 		7633E8AB252C488D0037A08A /* ResidentThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResidentThread.h; sourceTree = "<group>"; };
 		7633E8AC252C488D0037A08A /* ResidentThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResidentThread.m; sourceTree = "<group>"; };
 		7633E8B1252C4B690037A08A /* TripartiteLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripartiteLoginVC.h; sourceTree = "<group>"; };
@@ -428,6 +437,26 @@
 				8582DBE9232DD3CABDE39292 /* Pods_SkillDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76069CFD25AAE48000E92C3C /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				76069CFE25AAE49500E92C3C /* JPushVC.h */,
+				76069CFF25AAE49500E92C3C /* JPushVC.m */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
+		761972412581DF78003AB059 /* 复杂数据解析 */ = {
+			isa = PBXGroup;
+			children = (
+				761972422581DF8C003AB059 /* ComplexModelVC.h */,
+				761972432581DF8C003AB059 /* ComplexModelVC.m */,
+				761972472581DF9A003AB059 /* ComplexModel.h */,
+				761972482581DF9A003AB059 /* ComplexModel.m */,
+			);
+			path = "复杂数据解析";
 			sourceTree = "<group>";
 		};
 		7633E8B0252C4B3F0037A08A /* 三方登录 */ = {
@@ -909,6 +938,8 @@
 				76F37E952500714C00353D1F /* 加解密 */,
 				76B23C1C25013A6600546C76 /* 定时器 */,
 				7688B4F12566AD6A00B68D20 /* 筛选 */,
+				761972412581DF78003AB059 /* 复杂数据解析 */,
+				76069CFD25AAE48000E92C3C /* JPush */,
 			);
 			path = DetailsViewController;
 			sourceTree = "<group>";
@@ -1268,6 +1299,7 @@
 				764E27F0251F359900E12BD6 /* NSArray+PJW.m in Sources */,
 				764E2806251F568D00E12BD6 /* RACViewController.m in Sources */,
 				769B2EBE2532F901007DE3D3 /* DemoUtils.m in Sources */,
+				761972492581DF9A003AB059 /* ComplexModel.m in Sources */,
 				7680181F24FB81DB00A58DF0 /* ViewController.m in Sources */,
 				769B2E8F2532CD47007DE3D3 /* CoverView.m in Sources */,
 				76F32672256936AD00D3F2CE /* User.m in Sources */,
@@ -1279,11 +1311,13 @@
 				764E27EC251F356000E12BD6 /* CrashViewController.m in Sources */,
 				769B2E9E2532DC77007DE3D3 /* MainTabBar.m in Sources */,
 				76F32671256936AD00D3F2CE /* CZFFMDBExecute.m in Sources */,
+				761972442581DF8C003AB059 /* ComplexModelVC.m in Sources */,
 				763EFA3625334DC500EF3EB3 /* EwmViewController.m in Sources */,
 				7680183C24FB879F00A58DF0 /* SkillTableDataSource.m in Sources */,
 				7680184E24FBA8CD00A58DF0 /* Person.m in Sources */,
 				764317042504673D0034EE82 /* UIWebViewController.m in Sources */,
 				76D5D7042504D38A001B89CE /* RunTimeViewController.m in Sources */,
+				76069D0025AAE49500E92C3C /* JPushVC.m in Sources */,
 				764E27E6251EF14600E12BD6 /* DateViewController.m in Sources */,
 				769B2EAB2532E953007DE3D3 /* ProgressBarViewController.m in Sources */,
 				76F32681256959EC00D3F2CE /* PersonModel.m in Sources */,

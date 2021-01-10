@@ -1,6 +1,11 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Bugly
+
+Copyright (C) 2017 Tencent Bugly, Inc. All rights reserved.
+
+
 ## FMDB
 
 If you are using FMDB in your project, I'd love to hear about it.  Let Gus know
@@ -31,6 +36,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+## JCore
+
+Copyright jpush.cn
+
+## JPush
+
+Copyright jiguang.cn
 
 ## Masonry
 

@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-source 'https://github.com/CocoaPods/Specs.git'
+# source 'https://github.com/CocoaPods/Specs.git'
 
 target 'SkillDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -14,7 +14,9 @@ target 'SkillDemo' do
     pod 'Masonry', '~> 1.1.0'
     pod 'PNChart', '~> 0.8.9'
     pod 'SVGAPlayer'
-    pod 'YYKit','1.0.9'
-
+    pod 'YYKit'
+#    pod 'YYModel', '~> 1.0.4'
+    pod 'JPush'
+    pod 'Bugly'
 
 end
