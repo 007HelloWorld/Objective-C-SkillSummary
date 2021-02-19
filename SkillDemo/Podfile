@@ -19,5 +19,6 @@ target 'SkillDemo' do
     pod 'JPush'
     pod 'Bugly'
     pod 'BGFMDB'
+    
 
 end
