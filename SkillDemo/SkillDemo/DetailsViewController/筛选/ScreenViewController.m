@@ -7,7 +7,7 @@
 //
 
 #import "ScreenViewController.h"
-#import "Man.h"
+#import "OldMan.h"
 
 @interface ScreenViewController ()
 @property(nonatomic,strong) NSMutableArray * dataArr;
@@ -67,7 +67,7 @@
     //遍历所有数据源
     for (int i = 0; i < self.localDataArr.count; i++) {
         //将数据源里面的数据存入personArray中
-        Man * item = self.localDataArr[i];
+        OldMan * item = self.localDataArr[i];
         NSMutableArray * personArray = [NSMutableArray new];
         [personArray addObject:item.name];
         [personArray addObject:item.age];
@@ -254,31 +254,31 @@
     
     NSMutableArray * tempArr = [NSMutableArray array];
     
-    Man * p0 = [Man new];
+    OldMan * p0 = [OldMan new];
     p0.name = @"1";
     p0.age = @"11";
     p0.weight = @"111";
     p0.height = @"1111";
     
-    Man * p1 = [Man new];
+    OldMan * p1 = [OldMan new];
     p1.name = @"1";
     p1.age = @"18";
     p1.weight = @"100";
     p1.height = @"180";
     
-    Man * p2 = [Man new];
+    OldMan * p2 = [OldMan new];
     p2.name = @"1";
     p2.age = @"18";
     p2.weight = @"100";
     p2.height = @"180";
     
-    Man * p3 = [Man new];
+    OldMan * p3 = [OldMan new];
     p3.name = @"1";
     p3.age = @"18";
     p3.weight = @"100";
     p3.height = @"180";
     
-    Man * p4 = [Man new];
+    OldMan * p4 = [OldMan new];
     p4.name = @"1";
     p4.age = @"18";
     p4.weight = @"111";

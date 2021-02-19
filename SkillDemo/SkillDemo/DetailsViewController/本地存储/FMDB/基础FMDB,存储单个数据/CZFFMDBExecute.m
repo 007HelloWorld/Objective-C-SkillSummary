@@ -7,7 +7,7 @@
 //
 
 #import "CZFFMDBExecute.h"
-#import "User.h"
+#import "OldUser.h"
 
 // 集成FMDB框架
 #import <fmdb/FMDB.h>
@@ -71,7 +71,7 @@
 
 /// 增加用户实体
 /// @param user 用户对象
-- (void)addUser:(User *)user {
+- (void)addUser:(OldUser *)user {
     if (![self.database open]) {
         NSLog(@"database does not open.");
         return;
@@ -97,7 +97,7 @@
     FMResultSet *result = [self.database executeQuery:execSql];
     NSMutableArray *arr = [NSMutableArray array];
     while ([result next]) {
-        User *user = [User new];
+        OldUser *user = [OldUser new];
         user.userId = [result stringForColumn:@"userId"];
         user.username = [result stringForColumn:@"username"];
         user.userIcon = [result stringForColumn:@"userIcon"];
@@ -146,7 +146,7 @@
 
 /// 更新（修改）用户
 /// @param user 用户对象
-- (void)updateUser:(User *)user {
+- (void)updateUser:(OldUser *)user {
     if (![self.database open]) {
         NSLog(@"database does not open.");
         return;

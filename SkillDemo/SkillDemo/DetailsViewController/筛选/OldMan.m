@@ -5,9 +5,9 @@
 //  Created by Admin on 2020/11/6.
 //
 
-#import "Man.h"
+#import "OldMan.h"
 
-@implementation Man
+@implementation OldMan
 
 
 @end

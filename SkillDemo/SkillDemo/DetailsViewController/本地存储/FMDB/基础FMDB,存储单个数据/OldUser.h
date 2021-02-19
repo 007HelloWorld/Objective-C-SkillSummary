@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface User : NSObject
+@interface OldUser : NSObject
  
 @property(nonatomic,copy)NSString * userId;
 @property(nonatomic,copy)NSString * username;

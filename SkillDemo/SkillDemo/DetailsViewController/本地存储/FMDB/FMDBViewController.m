@@ -8,7 +8,7 @@
 
 #import "FMDBViewController.h"
 #import "CZFFMDBExecute.h"
-#import "User.h"
+#import "OldUser.h"
 
 
 #import <CommonCrypto/CommonDigest.h>
@@ -52,7 +52,7 @@
 -(void)addBasicsFMDB{
     
     for (int i = 0; i < 3; i ++) {
-        User *user = [User new];
+        OldUser *user = [OldUser new];
         user.userId = [NSString stringWithFormat:@"%f", [[NSDate date] timeIntervalSince1970]];
         user.username = [NSString stringWithFormat:@"张三%ld", random()];
         user.age = 18;
@@ -67,7 +67,7 @@
 
 -(void)uploadBasicsFMDB{
     NSArray *userList = [[CZFFMDBExecute shareInstance] getUserList];
-    User *user = userList[0];
+    OldUser *user = userList[0];
     user.username = @"sadasdaad";
     [[CZFFMDBExecute shareInstance] updateUser:user];
 }
@@ -76,7 +76,7 @@
     
     //指定哪个userId进行删除
     NSArray *userList = [[CZFFMDBExecute shareInstance] getUserList];
-    User *user = userList[0];
+    OldUser *user = userList[0];
     [[CZFFMDBExecute shareInstance] deleteUser:user.userId];
 }
 

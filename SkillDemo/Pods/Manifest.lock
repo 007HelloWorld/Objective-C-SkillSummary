@@ -1,4 +1,10 @@
 PODS:
+  - BGFMDB (2.0.13):
+    - BGFMDB/BG (= 2.0.13)
+    - BGFMDB/FMDB (= 2.0.13)
+  - BGFMDB/BG (2.0.13):
+    - BGFMDB/FMDB
+  - BGFMDB/FMDB (2.0.13)
   - Bugly (2.5.71)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -26,6 +32,7 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - BGFMDB
   - Bugly
   - FMDB
   - JPush
@@ -36,8 +43,12 @@ DEPENDENCIES:
   - YYKit
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+  trunk:
+    - BGFMDB
+    - Bugly
     - FMDB
+    - JCore
+    - JPush
     - Masonry
     - PNChart
     - Protobuf
@@ -46,12 +57,9 @@ SPEC REPOS:
     - SVGAPlayer
     - UICountingLabel
     - YYKit
-  trunk:
-    - Bugly
-    - JCore
-    - JPush
 
 SPEC CHECKSUMS:
+  BGFMDB: 48e6823027232402a678acc7f71484b1fc9171d0
   Bugly: fd066c75c4a0eca1440f9b6a84bd37d51bfc85ac
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   JCore: a29e4b0ee54e1301446dc02d8e1c350404108b34
@@ -65,6 +73,6 @@ SPEC CHECKSUMS:
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: ff125be599111095aced7556b3de306c03249634
+PODFILE CHECKSUM: d8a28d5c4cc5ddf45591882bfee8db422298f788
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.10.1

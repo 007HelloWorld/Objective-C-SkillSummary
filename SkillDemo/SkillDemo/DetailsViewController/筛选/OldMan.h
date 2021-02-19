@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Man : NSObject
+@interface OldMan : NSObject
 
 @property(nonatomic,copy) NSString * name;
 @property(nonatomic,copy) NSString * age;
