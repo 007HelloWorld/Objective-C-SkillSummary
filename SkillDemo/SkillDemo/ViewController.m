@@ -37,6 +37,10 @@
 #import "AnimationVC.h"
 #import "ScreenViewController.h"
 #import "ComplexModelVC.h"
+#import "CameraRollVC.h"
+#import "RotateVC.h"
+#import "AlineOfButtonVC.h"
+#import "ConventionsVC.h"
 
 
 @interface ViewController ()<UITableViewDelegate>
@@ -174,7 +178,24 @@
     }else if (indexPath.row == 25){
         ComplexModelVC * vc = [ComplexModelVC new];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 26){
+
+    }else if (indexPath.row == 27){
+        CameraRollVC * vc = [CameraRollVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 28){
+        RotateVC * vc = [RotateVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 29){
+        AlineOfButtonVC * vc = [AlineOfButtonVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 30){
+        ConventionsVC * vc = [ConventionsVC new];
+        [self.navigationController pushViewController:vc animated:YES];
     }
+    
+    
+    
     
     
     

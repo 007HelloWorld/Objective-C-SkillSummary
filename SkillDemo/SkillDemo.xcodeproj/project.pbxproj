@@ -43,6 +43,16 @@
 		767516D22503A62D00E2D54D /* HybridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 767516D12503A62D00E2D54D /* HybridViewController.m */; };
 		767516D42503A78000E2D54D /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 767516D32503A78000E2D54D /* index.html */; };
 		7679E42625DF65B6009EE5FB /* people.m in Sources */ = {isa = PBXBuildFile; fileRef = 7679E42525DF65B6009EE5FB /* people.m */; };
+		7679E44325DF92D3009EE5FB /* gzhPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7679E44225DF92D3009EE5FB /* gzhPhotoManager.m */; };
+		7679E44725DF92F9009EE5FB /* CameraRollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7679E44625DF92F9009EE5FB /* CameraRollVC.m */; };
+		7679E45025DF9562009EE5FB /* RotateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7679E44F25DF9562009EE5FB /* RotateVC.m */; };
+		7679E45725DF96D2009EE5FB /* AlineOfButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7679E45625DF96D2009EE5FB /* AlineOfButtonVC.m */; };
+		7679E46025DF96ED009EE5FB /* SMFacilityNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7679E45C25DF96ED009EE5FB /* SMFacilityNameCell.xib */; };
+		7679E46125DF96ED009EE5FB /* SMFacilityNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7679E45D25DF96ED009EE5FB /* SMFacilityNameModel.m */; };
+		7679E46225DF96ED009EE5FB /* SMFacilityNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7679E45E25DF96ED009EE5FB /* SMFacilityNameCell.m */; };
+		7679E46F25DF9A83009EE5FB /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7679E46D25DF9A82009EE5FB /* DemoTableViewCell.xib */; };
+		7679E47025DF9A83009EE5FB /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7679E46E25DF9A82009EE5FB /* DemoTableViewCell.m */; };
+		7679E47425DF9AA4009EE5FB /* ConventionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7679E47325DF9AA4009EE5FB /* ConventionsVC.m */; };
 		767ADDD025650C130052BE90 /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 767ADDC425650C130052BE90 /* WXUtil.mm */; };
 		767ADDD125650C130052BE90 /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 767ADDC725650C130052BE90 /* payRequsestHandler.mm */; };
 		767ADDD225650C130052BE90 /* WXPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 767ADDCA25650C130052BE90 /* WXPayModel.m */; };
@@ -191,6 +201,24 @@
 		767516D32503A78000E2D54D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		7679E42425DF65B6009EE5FB /* people.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = people.h; sourceTree = "<group>"; };
 		7679E42525DF65B6009EE5FB /* people.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = people.m; sourceTree = "<group>"; };
+		7679E44125DF92D3009EE5FB /* gzhPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzhPhotoManager.h; sourceTree = "<group>"; };
+		7679E44225DF92D3009EE5FB /* gzhPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gzhPhotoManager.m; sourceTree = "<group>"; };
+		7679E44525DF92F9009EE5FB /* CameraRollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraRollVC.h; sourceTree = "<group>"; };
+		7679E44625DF92F9009EE5FB /* CameraRollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraRollVC.m; sourceTree = "<group>"; };
+		7679E44E25DF9562009EE5FB /* RotateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateVC.h; sourceTree = "<group>"; };
+		7679E44F25DF9562009EE5FB /* RotateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateVC.m; sourceTree = "<group>"; };
+		7679E45525DF96D2009EE5FB /* AlineOfButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlineOfButtonVC.h; sourceTree = "<group>"; };
+		7679E45625DF96D2009EE5FB /* AlineOfButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlineOfButtonVC.m; sourceTree = "<group>"; };
+		7679E45B25DF96ED009EE5FB /* SMFacilityNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFacilityNameCell.h; sourceTree = "<group>"; };
+		7679E45C25DF96ED009EE5FB /* SMFacilityNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMFacilityNameCell.xib; sourceTree = "<group>"; };
+		7679E45D25DF96ED009EE5FB /* SMFacilityNameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFacilityNameModel.m; sourceTree = "<group>"; };
+		7679E45E25DF96ED009EE5FB /* SMFacilityNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFacilityNameCell.m; sourceTree = "<group>"; };
+		7679E45F25DF96ED009EE5FB /* SMFacilityNameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFacilityNameModel.h; sourceTree = "<group>"; };
+		7679E46C25DF9A82009EE5FB /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
+		7679E46D25DF9A82009EE5FB /* DemoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
+		7679E46E25DF9A82009EE5FB /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
+		7679E47225DF9AA4009EE5FB /* ConventionsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConventionsVC.h; sourceTree = "<group>"; };
+		7679E47325DF9AA4009EE5FB /* ConventionsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConventionsVC.m; sourceTree = "<group>"; };
 		767ADDC425650C130052BE90 /* WXUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXUtil.mm; sourceTree = "<group>"; };
 		767ADDC525650C130052BE90 /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payRequsestHandler.h; sourceTree = "<group>"; };
 		767ADDC625650C130052BE90 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
@@ -636,6 +664,68 @@
 			path = OpenGlShare;
 			sourceTree = "<group>";
 		};
+		7679E44025DF92AC009EE5FB /* 相机相册 */ = {
+			isa = PBXGroup;
+			children = (
+				7679E44525DF92F9009EE5FB /* CameraRollVC.h */,
+				7679E44625DF92F9009EE5FB /* CameraRollVC.m */,
+				7679E44125DF92D3009EE5FB /* gzhPhotoManager.h */,
+				7679E44225DF92D3009EE5FB /* gzhPhotoManager.m */,
+			);
+			path = "相机相册";
+			sourceTree = "<group>";
+		};
+		7679E44D25DF954F009EE5FB /* 屏幕旋转 */ = {
+			isa = PBXGroup;
+			children = (
+				7679E44E25DF9562009EE5FB /* RotateVC.h */,
+				7679E44F25DF9562009EE5FB /* RotateVC.m */,
+			);
+			path = "屏幕旋转";
+			sourceTree = "<group>";
+		};
+		7679E45425DF96A7009EE5FB /* 一行按钮可更改宽度及状态 */ = {
+			isa = PBXGroup;
+			children = (
+				7679E45525DF96D2009EE5FB /* AlineOfButtonVC.h */,
+				7679E45625DF96D2009EE5FB /* AlineOfButtonVC.m */,
+				7679E45A25DF96ED009EE5FB /* 一行多个按钮 */,
+			);
+			path = "一行按钮可更改宽度及状态";
+			sourceTree = "<group>";
+		};
+		7679E45A25DF96ED009EE5FB /* 一行多个按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				7679E45B25DF96ED009EE5FB /* SMFacilityNameCell.h */,
+				7679E45C25DF96ED009EE5FB /* SMFacilityNameCell.xib */,
+				7679E45D25DF96ED009EE5FB /* SMFacilityNameModel.m */,
+				7679E45E25DF96ED009EE5FB /* SMFacilityNameCell.m */,
+				7679E45F25DF96ED009EE5FB /* SMFacilityNameModel.h */,
+			);
+			path = "一行多个按钮";
+			sourceTree = "<group>";
+		};
+		7679E46A25DF9A68009EE5FB /* 页面展示未条条框框 */ = {
+			isa = PBXGroup;
+			children = (
+				7679E47225DF9AA4009EE5FB /* ConventionsVC.h */,
+				7679E47325DF9AA4009EE5FB /* ConventionsVC.m */,
+				7679E46B25DF9A82009EE5FB /* 条条框框 */,
+			);
+			path = "页面展示未条条框框";
+			sourceTree = "<group>";
+		};
+		7679E46B25DF9A82009EE5FB /* 条条框框 */ = {
+			isa = PBXGroup;
+			children = (
+				7679E46C25DF9A82009EE5FB /* DemoTableViewCell.h */,
+				7679E46D25DF9A82009EE5FB /* DemoTableViewCell.xib */,
+				7679E46E25DF9A82009EE5FB /* DemoTableViewCell.m */,
+			);
+			path = "条条框框";
+			sourceTree = "<group>";
+		};
 		767ADDC325650C130052BE90 /* WXPay */ = {
 			isa = PBXGroup;
 			children = (
@@ -952,6 +1042,10 @@
 				7688B4F12566AD6A00B68D20 /* 筛选 */,
 				761972412581DF78003AB059 /* 复杂数据解析 */,
 				76069CFD25AAE48000E92C3C /* JPush */,
+				7679E44025DF92AC009EE5FB /* 相机相册 */,
+				7679E44D25DF954F009EE5FB /* 屏幕旋转 */,
+				7679E45425DF96A7009EE5FB /* 一行按钮可更改宽度及状态 */,
+				7679E46A25DF9A68009EE5FB /* 页面展示未条条框框 */,
 			);
 			path = DetailsViewController;
 			sourceTree = "<group>";
@@ -1270,9 +1364,11 @@
 			files = (
 				767ADE4325650C230052BE90 /* AlipaySDK.bundle in Resources */,
 				7680182724FB81DE00A58DF0 /* LaunchScreen.storyboard in Resources */,
+				7679E46F25DF9A83009EE5FB /* DemoTableViewCell.xib in Resources */,
 				7666E5452529BCE7009F8DEB /* XIBDemoViewTableViewCell.xib in Resources */,
 				767516D42503A78000E2D54D /* index.html in Resources */,
 				76431706250478DC0034EE82 /* indexDemo.html in Resources */,
+				7679E46025DF96ED009EE5FB /* SMFacilityNameCell.xib in Resources */,
 				763EFA412533505700EF3EB3 /* resource.bundle in Resources */,
 				7680182424FB81DE00A58DF0 /* Assets.xcassets in Resources */,
 				763E7E452560CC3900908F5F /* 站内信.svga in Resources */,
@@ -1349,12 +1445,14 @@
 				764E27EC251F356000E12BD6 /* CrashViewController.m in Sources */,
 				769B2E9E2532DC77007DE3D3 /* MainTabBar.m in Sources */,
 				76F32671256936AD00D3F2CE /* CZFFMDBExecute.m in Sources */,
+				7679E47025DF9A83009EE5FB /* DemoTableViewCell.m in Sources */,
 				76F3EF0825BC6171007663F5 /* FileViewController.m in Sources */,
 				761972442581DF8C003AB059 /* ComplexModelVC.m in Sources */,
 				763EFA3625334DC500EF3EB3 /* EwmViewController.m in Sources */,
 				7680183C24FB879F00A58DF0 /* SkillTableDataSource.m in Sources */,
 				7680184E24FBA8CD00A58DF0 /* Person.m in Sources */,
 				764317042504673D0034EE82 /* UIWebViewController.m in Sources */,
+				7679E44325DF92D3009EE5FB /* gzhPhotoManager.m in Sources */,
 				76D5D7042504D38A001B89CE /* RunTimeViewController.m in Sources */,
 				76069D0025AAE49500E92C3C /* JPushVC.m in Sources */,
 				764E27E6251EF14600E12BD6 /* DateViewController.m in Sources */,
@@ -1364,6 +1462,7 @@
 				768A2CF8255D85B0005D29D9 /* FMDBViewController.m in Sources */,
 				76D5D7072504D4DB001B89CE /* NSArray+Demo.m in Sources */,
 				76884DDA24FCFC5700C5FDAA /* Students+CoreDataProperties.m in Sources */,
+				7679E47425DF9AA4009EE5FB /* ConventionsVC.m in Sources */,
 				764E280A251F58FA00E12BD6 /* BtnClickV.m in Sources */,
 				7633E8BA252C556B0037A08A /* SignInApple.m in Sources */,
 				767ADE4A25650C230052BE90 /* DataVerifier.m in Sources */,
@@ -1391,6 +1490,7 @@
 				769B2EA22532DD5B007DE3D3 /* HomePageViewController.m in Sources */,
 				76B333552568FB7C008CBFFA /* OldMan.m in Sources */,
 				767ADE4B25650C230052BE90 /* RSADataSigner.m in Sources */,
+				7679E46125DF96ED009EE5FB /* SMFacilityNameModel.m in Sources */,
 				763EFA402533505700EF3EB3 /* MMScanView.m in Sources */,
 				7680183F24FB8DD400A58DF0 /* SkillViewModel.m in Sources */,
 				7680182A24FB81DE00A58DF0 /* main.m in Sources */,
@@ -1403,8 +1503,12 @@
 				76F3EF0C25BC6489007663F5 /* CLCacheManager.m in Sources */,
 				7680184B24FBA04800A58DF0 /* ArchiveViewController.m in Sources */,
 				763E7E532560CF0000908F5F /* AnimationVC.m in Sources */,
+				7679E45025DF9562009EE5FB /* RotateVC.m in Sources */,
+				7679E46225DF96ED009EE5FB /* SMFacilityNameCell.m in Sources */,
+				7679E44725DF92F9009EE5FB /* CameraRollVC.m in Sources */,
 				7633E905252CA7D80037A08A /* PayViewController.m in Sources */,
 				767ADDD025650C130052BE90 /* WXUtil.mm in Sources */,
+				7679E45725DF96D2009EE5FB /* AlineOfButtonVC.m in Sources */,
 				76D5D6F92504C982001B89CE /* Multi-threadViewController.m in Sources */,
 				76B23C2225013AA700546C76 /* TGCDTimer.m in Sources */,
 				767ADE4425650C230052BE90 /* openssl_wrapper.m in Sources */,
