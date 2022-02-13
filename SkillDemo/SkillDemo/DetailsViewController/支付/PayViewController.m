@@ -57,14 +57,14 @@
 }
 
 -(void)wxPay{
-    
-    [WXApi registerApp:APP_ID withDescription:APP_Description];
-
-    NSDictionary * dict = @{@"payMsg":@"alipay_sdk=alipay-sdk-java-3.3.1&app_id=2016120904071956&biz_content=%7B++++%22out_trade_no%22%3A%2201161221120151619865%22%2C++++%22total_amount%22%3A11.34%2C++++%22subject%22%3A%22%E8%81%9A%E4%B9%99%E7%83%AF%E9%86%87%22%2C++++%22product_code%22%3A%22QUICK_MSECURITY_PAY%22++%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2Ftest.faker.asia%2Farchitecture-payment%2Fitface%2Ffree%2Fpayment%2Falipay%2Fnotify.htm&return_url=http%3A%2F%2F192.168.2.205%3A16580%2Fh5%2Fpay%2FreturnUrl&sign=F1LR8Th2dPa6ZWCmfN95WBpRfIkCXVkWO7rYtUYE9rw9aTsTwq1kr0XRCbX0TaONCwsYnWjN0bTF5EZmCZVLThbno7r7iAPUfhuygYxG2EjdITsFKXEq5IqR%2FoK4Yf1pvTGUCSd%2BfXV%2B0W%2BGMj5vervRY1HUEDbvWnBF2DASDaJ4YxLpMFgHpXYl0fzO%2FtBYCChZ8BewhPOAWuHfpGo94%2FStK9rJORNa1xhtY%2FA8NH13ZoYHvS3fUVrlFAxQ1Hl6%2BKZkpHm2xlvwhZ387I0jwf8Y2vTtO2qux7D6xFB%2FZYafRMt3aZlcX6Vl1OakuO6FrzgRwIsrnnzE2s9R7FXRww%3D%3D&sign_type=RSA2&timestamp=2019-01-15+16%3A47%3A00&version=1.0"};
-
-    WXPayModel *wxPayModel = [[WXPayModel alloc] initWithDictionary:dict];
-
-    [wxPayModel sendWeixinPay];
+//    
+//    [WXApi registerApp:APP_ID withDescription:APP_Description];
+//
+//    NSDictionary * dict = @{@"payMsg":@"alipay_sdk=alipay-sdk-java-3.3.1&app_id=2016120904071956&biz_content=%7B++++%22out_trade_no%22%3A%2201161221120151619865%22%2C++++%22total_amount%22%3A11.34%2C++++%22subject%22%3A%22%E8%81%9A%E4%B9%99%E7%83%AF%E9%86%87%22%2C++++%22product_code%22%3A%22QUICK_MSECURITY_PAY%22++%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2Ftest.faker.asia%2Farchitecture-payment%2Fitface%2Ffree%2Fpayment%2Falipay%2Fnotify.htm&return_url=http%3A%2F%2F192.168.2.205%3A16580%2Fh5%2Fpay%2FreturnUrl&sign=F1LR8Th2dPa6ZWCmfN95WBpRfIkCXVkWO7rYtUYE9rw9aTsTwq1kr0XRCbX0TaONCwsYnWjN0bTF5EZmCZVLThbno7r7iAPUfhuygYxG2EjdITsFKXEq5IqR%2FoK4Yf1pvTGUCSd%2BfXV%2B0W%2BGMj5vervRY1HUEDbvWnBF2DASDaJ4YxLpMFgHpXYl0fzO%2FtBYCChZ8BewhPOAWuHfpGo94%2FStK9rJORNa1xhtY%2FA8NH13ZoYHvS3fUVrlFAxQ1Hl6%2BKZkpHm2xlvwhZ387I0jwf8Y2vTtO2qux7D6xFB%2FZYafRMt3aZlcX6Vl1OakuO6FrzgRwIsrnnzE2s9R7FXRww%3D%3D&sign_type=RSA2&timestamp=2019-01-15+16%3A47%3A00&version=1.0"};
+//
+//    WXPayModel *wxPayModel = [[WXPayModel alloc] initWithDictionary:dict];
+//
+//    [wxPayModel sendWeixinPay];
 }
 
 -(void)zfbPay{

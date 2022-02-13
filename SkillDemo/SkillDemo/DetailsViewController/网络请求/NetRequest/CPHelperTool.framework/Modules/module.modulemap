@@ -1,0 +1,6 @@
+framework module CPHelperTool {
+  umbrella header "CPHelperTool.h"
+
+  export *
+  module * { export * }
+}

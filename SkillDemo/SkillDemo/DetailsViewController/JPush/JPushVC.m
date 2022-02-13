@@ -7,6 +7,11 @@
 //
 
 #import "JPushVC.h"
+//JPush
+#import "JPUSHService.h"
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
 
 @interface JPushVC ()
 
@@ -16,17 +21,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    //退出登录时调用的方法
+    [self loginOut];
+
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)loginOut{
+    [JPUSHService deleteAlias:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
+        NSLog(@"%@",iAlias);
+        if (iResCode == 0) {
+            NSLog(@"************%@", iAlias);
+            NSLog(@"************解绑别名成功");
+        }
+    } seq:1];
 }
-*/
+
 
 @end

@@ -26,6 +26,29 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
 
+    /*
+        复习沙盒
+        1、沙盒目录
+            a.Documents
+            保存由应用程序产生的文件或数据，例如：游戏进度。涂鸦软件的绘图
+            目录中的文件会自动保存到iCloud上
+            不要保存从网络上下载下来的文件
+            iTunes会备份
+    
+        2、Library/Cache
+            保存临时文件，后续需要使用，例如：缓存图片，离线地图数据
+            系统不会自动清理此目录
+            程序员需要提供清理此目录的功能
+            iTunes不会备份
+     
+        3、tmp
+            保存临时文件，后续不需要使用
+            tmp目录中的文件，系统会自动清理
+            系统的磁盘空间不足，会自动清理
+            系统重启，会清理该文件
+            iTunes不会备份
+    */
+    
     for (int i = 0; i < 5; i ++) {
         UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100 + 100 * i, 200, 60)];
         if (i == 0) {

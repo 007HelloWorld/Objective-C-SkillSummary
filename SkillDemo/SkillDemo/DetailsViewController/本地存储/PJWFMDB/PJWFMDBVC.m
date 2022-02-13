@@ -18,10 +18,18 @@
 @property(nonatomic,strong)People * modelP;
 @property(nonatomic,strong)NSMutableArray * imageArr;
 
+@property(nonatomic,strong)UIImageView * iconImageView;
 
 @end
 
 @implementation PJWFMDBVC
+
+- (UIImageView *)iconImageView{
+    if (!_iconImageView) {
+        _iconImageView = [[UIImageView alloc]init];
+    }
+    return _iconImageView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -59,10 +67,19 @@
     People * model = [[People bg_findAll:BGTablename] firstObject];
     self.modelP = model;
     
+    NSArray * arr = model.user.student.names;
+    NSLog(@" 查看数据0    %@",arr.firstObject);
     
     
+    NSArray * imageArr = self.modelP.arrM;
     
-    
+    self.iconImageView.image = [UIImage imageWithData:imageArr.firstObject];
+    [self.view addSubview:self.iconImageView];
+    [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.view.mas_bottom).offset(-10);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.width.height.offset(100);
+    }];
 }
 
 -(void)save:(UIButton *)sender{
@@ -118,18 +135,18 @@
     
     
     //更改二级目录的数据
-    self.modelP.bg_tableName = BGTablename;//自定义的数据库表名称(库自带的字段).  bg_equal
-    NSString * where = [NSString stringWithFormat:@"where %@",bg_keyPathValues(@[@"user.name",bg_equal,self.modelP.user.name])];
-    self.modelP.user.name = [self name];
-    [self.modelP bg_updateAsyncWhere:where complete:^(BOOL isSuccess) {
-        if (isSuccess) {
-            NSLog(@"成功");
-        }else{
-            NSLog(@"失败");
-        }
-    }];
-    People *model = [[People bg_findAll:BGTablename] firstObject];
-    NSLog(@" 查看数据0    %@",model.user.name);
+//    self.modelP.bg_tableName = BGTablename;//自定义的数据库表名称(库自带的字段).  bg_equal
+//    NSString * where = [NSString stringWithFormat:@"where %@",bg_keyPathValues(@[@"user.name",bg_equal,self.modelP.user.name])];
+//    self.modelP.user.name = [self name];
+//    [self.modelP bg_updateAsyncWhere:where complete:^(BOOL isSuccess) {
+//        if (isSuccess) {
+//            NSLog(@"成功");
+//        }else{
+//            NSLog(@"失败");
+//        }
+//    }];
+//    People *model = [[People bg_findAll:BGTablename] firstObject];
+//    NSLog(@" 查看数据0    %@",model.user.name);
     
     
 //    更改三级目录的数据
@@ -174,15 +191,43 @@
 //    }];
     
     
+//    //更改四级目录的数据,对于数组的存储，使用先修改，后删除缓存，在删除
+//    self.modelP.bg_tableName = BGTablename;//自定义的数据库表名称(库自带的字段).  bg_equal
+//    NSMutableArray * arr = [NSMutableArray arrayWithArray:self.modelP.user.student.names];
+//    [arr replaceObjectAtIndex:0 withObject:[self name]];
+//    self.modelP.user.student.names = nil;
+//    self.modelP.user.student.names = arr;
+//
+//    NSString * where = [NSString stringWithFormat:@"where %@",bg_keyPathValues(@[@"user.student.names",bg_equal,arr])];
+//
+//    [self.modelP bg_updateAsyncWhere:where complete:^(BOOL isSuccess) {
+//        if (isSuccess) {
+//            NSLog(@"FMDB--数据更新成功");
+//        }
+//
+//        People *model = [[People bg_findAll:BGTablename] firstObject];
+//        NSArray * arr = model.user.student.names;
+//
+//        NSLog(@" 查看数据0    %@",arr.firstObject);
+//    }];
+
     
-    //修改图片
+    
+    
+    
+    
+    
+    
+    
+//    //修改图片
     self.modelP.bg_tableName = BGTablename;//自定义的数据库表名称(库自带的字段).  bg_equal
     self.modelP.arrM = [self imagesArr];
     [People bg_deleteAsync:BGTablename where:nil complete:^(BOOL isSuccess) {
         NSLog(@"删除成功");
     }];
-    
-    
+
+    NSLog(@"    查看图片        %@",self.modelP.arrM);
+
     [self.modelP bg_coverAsync:^(BOOL isSuccess) {//覆盖存储，即清除之前的数据，只存储当前的数据
         if (isSuccess) {
             NSLog(@"存储成功");

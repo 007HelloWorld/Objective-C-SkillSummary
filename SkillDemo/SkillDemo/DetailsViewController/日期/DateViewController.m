@@ -79,6 +79,9 @@
     NSArray * timearr = [self latelyEightTime];//获取当前时间的周一到周末的时间
     NSLog(@"获取当前时间的周一到周末的时间     %@",timearr);
     
+    
+    NSString * str11 = [self getMonthBeginAndEndWith:@"2021年02月18日"];//获取月初月末时间
+    NSLog(@"根据传入的时间，获取月初月末时间     %@",str11);
 }
 
 - (NSString *)getMonthBegin:(NSString *)dateStr{
@@ -200,6 +203,30 @@
     return Str;
 }
 
-
+//获取月初月末时间
+- (NSString *)getMonthBeginAndEndWith:(NSString *)dateStr{
+    NSDateFormatter *format=[[NSDateFormatter alloc] init];
+    [format setDateFormat:@"yyyy年MM月dd日"];
+    NSDate *newDate=[format dateFromString:dateStr];
+    double interval = 0;
+    NSDate *beginDate = nil;
+    NSDate *endDate = nil;
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    [calendar setFirstWeekday:2];//设定周一为周首日
+    BOOL ok = [calendar rangeOfUnit:NSCalendarUnitMonth startDate:&beginDate interval:&interval forDate:newDate];
+    //分别修改为 NSDayCalendarUnit NSWeekCalendarUnit NSYearCalendarUnit
+    if (ok) {
+        endDate = [beginDate dateByAddingTimeInterval:interval-1];
+    }else {
+        return @"";
+    }
+    NSDateFormatter *myDateFormatter = [[NSDateFormatter alloc] init];
+    [myDateFormatter setDateFormat:@"YYYY-MM-dd"];
+    NSString * strStateTime = [myDateFormatter stringFromDate:beginDate];
+    NSString * strEndTime = [myDateFormatter stringFromDate:endDate];
+    NSString *s = [NSString stringWithFormat:@"%@-%@",strStateTime,strEndTime];
+    
+    return s;
+}
 
 @end
